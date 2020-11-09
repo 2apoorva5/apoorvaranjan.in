@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Apoorva Ranjan - Android Developer | UI/UX Designer | Analyst</title>
+        <link rel="icon" href="images/logo-brief.svg" type="image/icon type">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <script src="https://kit.fontawesome.com/d93fe26843.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/transition.css">
+    </head>
+
+    <body>
+
+        <div class="site-main-wrapper">
+
+            <div class="transition">
+                <div class="cover cover1"></div>
+                <div class="cover cover2"></div>
+                <div class="cover cover3"></div>
+            </div>
+            
+            <div class="mobile-nav container">
+                <a href="index.html"><img src="images/logo-brief.svg" alt="Apoorva Ranjan"></a>
+                <button class="hamburger">
+                    <img src="images/hamburger.svg" alt="Menu">
+                </button>
+            </div>
+
+            <div class="mobile-nav-menu">
+                <button class="closemenu">
+                    <img src="images/closemenu.svg" alt="Menu">
+                </button>
+                <ul>
+                    <li class="menu1"><a href="#intro">INTRO</a></li>
+                    <li class="menu2"><a href="#about">ABOUT</a></li>
+                    <li class="menu3"><a href="#skills">SKILLS</a></li>
+                    <li class="menu4"><a href="#experience">EXPERIENCE</a></li>
+                    <li class="menu5"><a href="#services">SERVICES</a></li>
+                    <li class="menu6"><a href="projects.html">PROJECTS</a></li>
+                </ul>
+            </div>
+
+            <div class="scrollTop" onclick="scrollToTop();">
+                <img src="images/scroll_to_top.svg" alt="Scroll To Top">
+            </div>
+    
+            <script type="text/javascript">
+                window.addEventListener('scroll', function(){
+                    var scroll = document.querySelector('.scrollTop');
+                    scroll.classList.toggle("active", window.scrollY > 500)
+                })
+    
+                function scrollToTop(){
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                    })
+                }
+            </script>
+    
+            <header>
+                <div id="main-nav" class="container flex items-center justify-between">
+                    <a href="index.html"><img src="images/logo.svg" alt="Apoorva Ranjan"></a>
+                    <ul>
+                        <li class="menu1"><a href="#intro">INTRO</a></li>
+                        <li class="menu2"><a href="#about">ABOUT</a></li>
+                        <li class="menu3"><a href="#skills">SKILLS</a></li>
+                        <li class="menu4"><a href="#experience">EXPERIENCE</a></li>
+                        <li class="menu5"><a href="#services">SERVICES</a></li>
+                        <li class="menu6"><a href="projects.html">PROJECTS</a></li>
+                    </ul>
+                </div>
+            </header>
+    
+            <script type="text/javascript">
+                window.addEventListener("scroll", function(){
+                    var header = document.querySelector("header");
+                    header.classList.toggle("sticky", window.scrollY > 0);
+                })
+            </script>
+    
+            <section id="intro" class="intro">
+                <div class="hero container flex justify-between hero-inner-wrap">
+                    <div class="left" 
+                        data-aos="fade-up" 
+                        data-aos-offset="200"
+                        data-aos-delay="0"
+                        data-aos-duration="1000"
+                        data-aos-once="false">
+                            <h1><span id="spin"></span></h1>
+                            <h6>Here's who I am & what I do.</h6>
+                            <p>I'm a freelance <span>Android Developer</span> & <span>UI/UX Designer</span> for mobile applications, currently based in Dhanbad, India.</p>
+                            <div class="intro-btns flex items-center">
+                                <div class="resume-btn">
+                                    <a href="https://drive.google.com/file/d/1eyk-UYLC0X-M7kIEc_5zuXjivdXtn8gc/view?usp=sharing" target="_blank">
+                                        <button class="btn btn-secondary">RESUME</button>
+                                    </a>
+                                </div>
+                                <div class="contact-btn">
+                                    <button class="btn btn-primary" onClick='window.location="#contact"'>CONTACT</button>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="right"
+                        data-aos="fade-up"
+                        data-aos-offset="200"
+                        data-aos-delay="0"
+                        data-aos-duration="1000"
+                        data-aos-once="false">
+                            <img src="images/apoorva1.png" alt="Apoorva Ranjan">
+                    </div>
+                </div>
+            </section>
+        
+            <section id="about" class="about">
+                <div class="container flex justify-between about-inner-wrap">
+                    <div class="left flex-1"
+                        data-aos="fade-up" 
+                        data-aos-offset="200"
+                        data-aos-delay="0"
+                        data-aos-duration="1000"
+                        data-aos-once="false">
+                            <img src="images/apoorva2.png" alt="Apoorva Ranjan">
+                    </div>
+                    <div class="right flex-1"
+                        data-aos="fade-up" 
+                        data-aos-offset="200"
+                        data-aos-delay="0"
+                        data-aos-duration="1000"
+                        data-aos-once="false">
+                            <h1><span>About</span> Me</h1>
+                            <h6>Hey there! I'm Apoorva Ranjan.</h6>
+                            <p class="p1">An analytical and detail oriented <span>Android Application Developer</span> and <span>UI/UX Designer</span> for mobile applications with 2+ years of experience in building, integrating, testing and conceptualizing app solutions with the latest technology, design theory and a large dose of creativity with the commitment to viable and easily functional app solutions for clients.</p>
+                            <p class="p2">Also, a strong professional with a <span>Bachelor of Engineering</span> focused in <span>Computer Science and Engineering</span> from Chandigarh University.</p>
+                            <p class="p3">Currently working as a <span>Business Intelligence Analyst/Software Engineer</span> at <span>Capgemini India</span>.</p>
+                            <p class="p4">Google Play Developer's Account : <a href="https://play.google.com/store/apps/developer?id=Developer+Depository&hl=en_US" target="_blank">Developer Depository</a></p>
+                            <div class="about-socials">
+                                <a href="https://play.google.com/store/apps/developer?id=Developer+Depository&hl=en_US" target="_blank"><img src="images/googleplay.svg" alt="Google Play"></a>
+                                <a href="mailto:apoorvaranjan025@gmail.com"><img src="images/email.svg" alt="Email"></a>
+                                <a href="https://github.com/2apoorva5" target="_blank"><img src="images/github.svg" alt="Github"></a>
+                                <a href="https://www.linkedin.com/in/2apoorva5/" target="_blank"><img src="images/linkedin.svg" alt="Linked In"></a>
+                                <a href="https://twitter.com/2apoorva5" target="_blank"><img src="images/twitter.svg" alt="Twitter"></a>
+                                <a href="https://www.facebook.com/apoorva025" target="_blank"><img src="images/facebook.svg" alt="Facebook"></a>
+                                <a href="https://www.instagram.com/2apoorva5/" target="_blank"><img src="images/instagram.svg" alt="Instagram"></a>
+                            </div>
+                    </div>
+                </div>
+            </section>
+        
+            <section id="skills" class="skills">
+                <div class="container flex justify-between skills-inner-wrap">
+                    <div class="left"
+                    data-aos="fade-up" 
+                    data-aos-offset="200"
+                    data-aos-delay="0"
+                    data-aos-duration="1000"
+                    data-aos-once="false">
+                        <h1>My <span>Skills</span></h1>
+                        <p class="p1">I'm mainly into <span>Android Development</span> and <span>UI/UX Designing</span> for mobile applications. I develop apps mainly using <span>JAVA</span> and somewhat <span>Kotlin</span>. For backend, I've gained 2+ years of experience of managing apps using <span>Firebase - A Google mobile & web app solutions</span>.</p>
+                        <p class="p2">Also, having sound knowledge of <span>Google Material Design Guidelines</span> helps me in designing stand-out applications and being skilled in <span>Adobe XD</span> helps me with the UI/UX Designing part.</p>
+                        <p class="p3">Now apart from these skills, I'm constantly into learning new concepts to add to my arsenal. For now, have a look around at some of my key competencies :</p>
+                        <div class="skills-area1"
+                        data-aos="fade-up" 
+                        data-aos-offset="200"
+                        data-aos-delay="0"
+                        data-aos-duration="1000"
+                        data-aos-once="false">
+                            <h6>Top Skills :</h6>
+                            <ul>
+                                <li class="skill1 flex items-center justify-between">
+                                    <p class="skill-name">Android Application Development</p>
+                                    <p class="skill-value">90% - Experienced</p>
+                                </li>
+                                <li class="skill2 flex items-center justify-between">
+                                    <p class="skill-name">UI/UX Design using Adobe XD</p>
+                                    <p class="skill-value">85% - Experienced</p>
+                                </li>
+                                <li class="skill3 flex items-center justify-between">
+                                    <p class="skill-name">Firebase for Android</p>
+                                    <p class="skill-value">80% - Experienced</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="skills-area2"
+                        data-aos="fade-up" 
+                        data-aos-offset="200"
+                        data-aos-delay="0"
+                        data-aos-duration="1000"
+                        data-aos-once="false">
+                            <h6>Languages :</h6>
+                            <ul>
+                                <li class="skill4 flex items-center justify-between">
+                                    <p class="skill-name">JAVA for Android</p>
+                                    <p class="skill-value">70% - Intermediate</p>
+                                </li>
+                                <li class="skill5 flex items-center justify-between">
+                                    <p class="skill-name">Kotlin for Android</p>
+                                    <p class="skill-value">35% - Beginner</p>
+                                </li>
+                                <li class="skill6 flex items-center justify-between">
+                                    <p class="skill-name">HTML/CSS/Javascript</p>
+                                    <p class="skill-value">40% - Beginner</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="skills-area3"
+                        data-aos="fade-up" 
+                        data-aos-offset="200"
+                        data-aos-delay="0"
+                        data-aos-duration="1000"
+                        data-aos-once="false">
+                            <h6>Other Tools & Technologies :</h6>
+                            <ul>
+                                <li class="skill7 flex items-center justify-between">
+                                    <p class="skill-name">Google Material Design</p>
+                                    <p class="skill-value">90% - Experienced</p>
+                                </li>
+                                <li class="skill8 flex items-center justify-between">
+                                    <p class="skill-name">SQL Server Database</p>
+                                    <p class="skill-value">70% - Intermediate</p>
+                                </li>
+                                <li class="skill9 flex items-center justify-between">
+                                    <p class="skill-name">Room Database for Android</p>
+                                    <p class="skill-value">40% - Beginner</p>
+                                </li>
+                                <li class="skill10 flex items-center justify-between">
+                                    <p class="skill-name">BI - ETL & Reporting</p>
+                                    <p class="skill-value">60% - Intermediate</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="right"
+                    data-aos="fade-up" 
+                    data-aos-offset="200"
+                    data-aos-delay="0"
+                    data-aos-duration="1000"
+                    data-aos-once="false">
+                        <img src="images/skills.svg" alt="Skills">
+                    </div>
+                </div>
+            </section>
+        
+            <section id="experience" class="experience">
+                <div class="experience-title"
+                    data-aos="fade-up" 
+                    data-aos-offset="200"
+                    data-aos-delay="0"
+                    data-aos-duration="1000"
+                    data-aos-once="false">
+                        <h1>Work <span>Experience</span></h1>
+                </div>
+                <div class="container timeline">
+                    <ul>
+                        <li>
+                            <div class="time"
+                            data-aos="fade-up" 
+                            data-aos-offset="200"
+                            data-aos-delay="0"
+                            data-aos-duration="1000"
+                            data-aos-once="false">
+                                <h4>Oct 2020 - Present</h4>
+                            </div>
+                            <div class="content"
+                            data-aos="fade-up" 
+                            data-aos-offset="200"
+                            data-aos-delay="0"
+                            data-aos-duration="1000"
+                            data-aos-once="false">
+                                <h3>Analyst / Software Engineer</h3>
+                                <h4>Capgemini India</h4>
+                                <p>Currently working as a Business Intelligence Analyst / Software Engineer at Capgemini India and getting along with Business Intelligence concepts.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="time"
+                            data-aos="fade-up" 
+                            data-aos-offset="200"
+                            data-aos-delay="0"
+                            data-aos-duration="1000"
+                            data-aos-once="false">
+                                <h4>Jan 2020 - Sep 2020</h4>
+                            </div>
+                            <div class="content"
+                            data-aos="fade-up" 
+                            data-aos-offset="200"
+                            data-aos-delay="0"
+                            data-aos-duration="1000"
+                            data-aos-once="false">
+                                <h3>Business Intelligence Analyst - Trainee</h3>
+                                <h4>Capgemini India</h4>
+                                <p>Done with my analyst trainee position in Business Intelligence unit at Capgemini India where I got to learn Data Analysis concepts using ETL process and Reporting and made various projects based on that.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="time"
+                            data-aos="fade-up" 
+                            data-aos-offset="200"
+                            data-aos-delay="0"
+                            data-aos-duration="1000"
+                            data-aos-once="false">
+                                <h4>Apr 2020 - Present</h4>
+                            </div>
+                            <div class="content"
+                            data-aos="fade-up" 
+                            data-aos-offset="200"
+                            data-aos-delay="0"
+                            data-aos-duration="1000"
+                            data-aos-once="false">
+                                <h3>Android Developer - Self Employed</h3>
+                                <h4>Developer Depository</h4>
+                                <p>A self-employed android developer at Developer Depository, a banner under which I publish Android Applications on Google Play.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="time"
+                            data-aos="fade-up" 
+                            data-aos-offset="200"
+                            data-aos-delay="0"
+                            data-aos-duration="1000"
+                            data-aos-once="false">
+                                <h4>Aug 2019 - Dec 2019</h4>
+                            </div>
+                            <div class="content"
+                            data-aos="fade-up" 
+                            data-aos-offset="200"
+                            data-aos-delay="0"
+                            data-aos-duration="1000"
+                            data-aos-once="false">
+                                <h3>Freelance Android Developer</h3>
+                                <h4>FitBeetles</h4>
+                                <p>Worked as a freelance android developer for a client and developed a fully-functional Fitness Centre Booking Android Application. Got to explore more about android development.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="time"
+                            data-aos="fade-up" 
+                            data-aos-offset="200"
+                            data-aos-delay="0"
+                            data-aos-duration="1000"
+                            data-aos-once="false">
+                                <h4>Apr 2019</h4>
+                            </div>
+                            <div class="content"
+                            data-aos="fade-up" 
+                            data-aos-offset="200"
+                            data-aos-delay="0"
+                            data-aos-duration="1000"
+                            data-aos-once="false">
+                                <h3>Project Leader</h3>
+                                <h4>HackOverFlow 2.0, Chandigarh University</h4>
+                                <p>Served as the project lead for the Hackathon event held at Chandigarh University - HackOverFlow 2.0 where we're involved in developing a women's safety android application.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="time"
+                            data-aos="fade-up" 
+                            data-aos-offset="200"
+                            data-aos-delay="0"
+                            data-aos-duration="1000"
+                            data-aos-once="false">
+                                <h4>Jan 2019 - Apr 2019</h4>
+                            </div>
+                            <div class="content"
+                            data-aos="fade-up" 
+                            data-aos-offset="200"
+                            data-aos-delay="0"
+                            data-aos-duration="1000"
+                            data-aos-once="false">
+                                <h3>Freelance Android Developer</h3>
+                                <h4>Food@Door - DINE | SNACK | CHEER</h4>
+                                <p>Worked as a freelance android developer for a client and developed a fully-functional Restaurant Food Ordering Android Application. Got to explore more about android development.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="time"
+                            data-aos="fade-up" 
+                            data-aos-offset="200"
+                            data-aos-delay="0"
+                            data-aos-duration="1000"
+                            data-aos-once="false">
+                                <h4>May 2018 - Jun 2018</h4>
+                            </div>
+                            <div class="content"
+                            data-aos="fade-up" 
+                            data-aos-offset="200"
+                            data-aos-delay="0"
+                            data-aos-duration="1000"
+                            data-aos-once="false">
+                                <h3>Android Project Trainee</h3>
+                                <h4>ThinkNext Technologies Pvt. Ltd., Mohali</h4>
+                                <p>Worked and gained knowledge as an Android Project Trainee during my tenure of 6 weeks. Was involved in developing a real-estate android app which got my basics right and helped me dive deep into Android Development and explore the field.</p>
+                            </div>
+                        </li>
+                        <div style="clear: both;"></div>
+                    </ul>
+                </div>
+            </section>
+        
+            <section id="services" class="services">
+                <div class="container"
+                data-aos="fade-up"
+                data-aos-offset="200"
+                data-aos-delay="0"
+                data-aos-duration="1000"
+                data-aos-once="false">
+                    <h1><span>Hire</span> me for..</h1>
+                    <div class="card-wrapper">
+                        <div class="card"
+                        data-aos="fade-up"
+                        data-aos-offset="200"
+                        data-aos-delay="0"
+                        data-aos-duration="1500"
+                        data-aos-once="false">
+                            <img src="images/service1.svg" alt="Android App Development">
+                            <h3>Android Development</h3>
+                            <p>I ensure the correct implementation and efficient execution of my knowledge in android development to develop a user friendly mobile application with the latest technology, design theory and a large dose of creativity.</p>
+                        </div>
+                        <div class="card"
+                        data-aos="fade-up" 
+                        data-aos-offset="200"
+                        data-aos-delay="0"
+                        data-aos-duration="1500"
+                        data-aos-once="false">
+                            <img src="images/service2.svg" alt="UI/UX Design">
+                            <h3>UI/UX Design</h3>
+                            <p>I design user interfaces with better user experience for mobile applications using Adobe XD, keeping the Google Material Design Guidelines in check. You can expect from me a complete UI/UX kit for any mobile application.</p>
+                        </div>
+                        <div class="card"
+                        data-aos="fade-up" 
+                        data-aos-offset="200"
+                        data-aos-delay="0"
+                        data-aos-duration="1500"
+                        data-aos-once="false">
+                            <img src="images/service3.svg" alt="Logo Designing">
+                            <h3>Logo Design</h3>
+                            <p>I also design beautiful logos for brands keeping the maximum amount of creativity in check for that. You can expect from me a beautifully designed and very well crafted logo for your brand in multiple formats like .png, .jpg, .svg, etc.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        
+            <section class="freelancer">
+                <div class="container">
+                    <h3>I'm available for freelancing.</h3>
+                    <p>I provide high standard services for <span>Android Development</span> and <span>UI/UX Design</span>. You can hire me for designing and developing cleanly constructed android applications with the best-in-class UI practices to start or grow your online business.</p>
+                    <a href="https://drive.google.com/file/d/1eyk-UYLC0X-M7kIEc_5zuXjivdXtn8gc/view?usp=sharing" target="_blank">
+                        <button class="btn btn-primary">DOWNLOAD CV</button>
+                    </a>
+                </div>
+            </section>
+        
+            <section class="recommendations">
+                <div class="container">
+                    <h1>Recommendations</h1>
+                    <p>Here goes some of the recommendations given by people whom I worked with or whom I worked for, directly or indirectly :</p>
+                    <div class="slider">
+                        <div class="slide">
+                            <img src="images/recom1.jpg" alt="Kamal Kumar">
+                            <p>Apoorva is a determined guy with a passion for design and development, especially Android development. I personally know the amount of immense hard work he has put in for his career growth.  He is very dedicated and has an excellent learning curve. As a person, he is enthusiastic, jovial and the easiest person to get along with.</p>
+                            <a href="https://www.linkedin.com/in/kamal1kumarlatiyal/" target="_blank"><span>- Kamal Kumar, Ex Teaching Assistant (Mentor) @ Coding Ninja</span></a>
+                        </div>
+                        <div class="slide">
+                            <img src="images/recom2.jpg" alt="Harneet Singh">
+                            <p>Dynamic personality is what you can say about Apoorva. Having good knowledge about various technologies like Android and the enthusiasm to learn new things and to share it with the community makes him an asset to any organisation. I have known him from my Capgemini training time and all I can say about him is humble, team player and always full of energy.</p>
+                            <a href="https://www.linkedin.com/in/iharneetsingh/" target="_blank"><span>- Harneet Singh, Analyst at Capgemini</span></a>
+                        </div>
+                        <div class="slide">
+                            <img src="images/recom3.jpg" alt="Shivansh Shrimal">
+                            <p>Apoorva has a sophisticated grasp in Android Application Development, combined with an innate feel for UI/UX design and a warm, personal approach to his clients. His "consumer centric approach" has shaped the user experience of FitBeetles. FitBeetles turned out to be a great product in the market. I highly recommend his vast skillset as an Android Developer for any individual or organization looking to launch or expand their online business.</p>
+                            <a href="https://www.linkedin.com/in/shivansh-shrimal/" target="_blank"><span>- Shivansh Shrimal, Entrepreneur | Sr Business Development Executive at GirnarSoft</span></a>
+                        </div>
+                        <div class="slide">
+                            <img src="images/recom4.jpg" alt="Jaskirat Singh">
+                            <p>Apoorva is an enthusiastic learner and very good Android developer. As a team member or a leader, he earns my highest recommendation.</p>
+                            <a href="https://www.linkedin.com/in/jaskirat-singh-8a80a0187/" target="_blank"><span>- Jaskirat Singh, Android Developer | Competitive coder | Open source</span></a>
+                        </div>
+                    </div>
+                    <div class="slider-dots"></div>
+                </div>
+            </section>
+    
+            <section id="contact" class="contact">
+                <div class="container"
+                data-aos="fade-up"
+                data-aos-offset="200"
+                data-aos-delay="0"
+                data-aos-duration="1000"
+                data-aos-once="false">
+                    <h1><span>Contact</span> Me</h1>
+                    <div class="card-wrapper">
+                        <div class="card"
+                        data-aos="fade-up"
+                        data-aos-offset="200"
+                        data-aos-delay="0"
+                        data-aos-duration="1000"
+                        data-aos-once="false">
+                            <img src="images/contact_phone.svg" alt="Phone">
+                            <h3>Call me on</h3>
+                            <h6>+91 991 546 2971</h6>
+                        </div>
+                        <div class="card"
+                        data-aos="fade-up"
+                        data-aos-offset="200"
+                        data-aos-delay="0"
+                        data-aos-duration="1000"
+                        data-aos-once="false">
+                            <img src="images/contact_email.svg" alt="Email">
+                            <h3>Email me directly at</h3>
+                            <a href="mailto:apoorvaranjan025@gmail.com"><h6>apoorvaranjan025@gmail.com</h6></a>
+                        </div>
+                        <div class="card"
+                        data-aos="fade-up"
+                        data-aos-offset="200"
+                        data-aos-delay="0"
+                        data-aos-duration="1000"
+                        data-aos-once="false">
+                            <img src="images/contact_map.svg" alt="Address">
+                            <h3>Visit me</h3>
+                            <h6>Parvati Sadan, Chitrakoot Colony, B-Polytechnic, Dhanbad - 828130</h6>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <footer>
+                <div class="footer-wrap container flex items-center justify-between footer-inner-wrap">
+                    <a href="index.html"><img src="images/logo.svg" alt="Apoorva Ranjan"></a>
+                    <div class="footer-socials">
+                        <a href="https://play.google.com/store/apps/developer?id=Developer+Depository&hl=en_US" target="_blank"><i class="fab fa-google-play fa-sm"></i></a>
+                        <a href="mailto:apoorvaranjan025@gmail.com"><i class="fas fa-envelope fa-sm"></i></a>
+                        <a href="https://github.com/2apoorva5" target="_blank"><i class="fab fa-github fa-sm"></i></a>
+                        <a href="https://www.linkedin.com/in/2apoorva5/" target="_blank"><i class="fab fa-linkedin-in fa-sm"></i></a>
+                        <a href="https://twitter.com/2apoorva5" target="_blank"><i class="fab fa-twitter fa-sm"></i></a>
+                        <a href="https://www.facebook.com/apoorva025" target="_blank"><i class="fab fa-facebook fa-sm"></i></a>
+                        <a href="https://instagram.com/2apoorva5" target="_blank"><i class="fab fa-instagram fa-sm"></i></a>
+                    </div>
+                    <div class="copyright">
+                        <h6>&#xA9; 2020 by Apoorva Ranjan   &#x7c;   All rights reserved.</h6>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script type="text/javascript" src="./js/app.js"></script>
+
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+
+    </body>
+
+</html>

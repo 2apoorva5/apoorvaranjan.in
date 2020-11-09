@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <g id="hamburger" transform="translate(-1639 -358)">
+    <rect id="Rectangle_18" data-name="Rectangle 18" width="40" height="40" transform="translate(1639 358)" fill="none"/>
+    <g id="Icon_feather-menu" data-name="Icon feather-menu" transform="translate(1645 368.667)">
+      <path id="Path_4" data-name="Path 4" d="M4.5,18h28" transform="translate(-4.5 -8.667)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      <path id="Path_5" data-name="Path 5" d="M4.5,9h28" transform="translate(-4.5 -9)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      <path id="Path_6" data-name="Path 6" d="M4.5,27h28" transform="translate(-4.5 -8.333)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    </g>
+  </g>
+</svg>

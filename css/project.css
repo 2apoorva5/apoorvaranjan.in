@@ -1,0 +1,946 @@
+@import 'utilities.css';
+
+:root{
+    --primary:#32DE84;
+    --secondary: #000000;
+    --dark:#03151E;
+    --pure:#FFFFFF;
+    --ternary:#828282;
+    --light:#F2F2F2;
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+.container{
+    max-width: 1152px;
+    padding: 0 1rem;
+    margin: 0 auto;
+}
+
+@media(min-width: 576px){
+    .container{
+        max-width: 540px;
+    }
+}
+
+@media(min-width: 768px){
+    .container{
+        max-width: 720px;
+    }
+}
+
+@media(min-width: 1052px){
+    .container{
+        max-width: 1000px;
+    }
+}
+
+@media(min-width: 1200px){
+    .container{
+        max-width: 1152px;
+    }
+}
+
+
+.scrollTop{
+    position: fixed;
+    bottom: 800px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    z-index: 1;
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.scrollTop img{
+    width: 100%;
+    height: 100%;
+}
+
+.scrollTop.active{
+    bottom: 30px;
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/* This is the header section */
+
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 3rem 0;
+    background-color: var(--dark);
+    z-index: 1;
+    margin-bottom: 2rem;
+    transition: all 0.6s ease;
+}
+
+header.sticky{
+    padding: 1.5rem 0;
+    background: var(--secondary);
+    transition: all 0.6s ease;
+}
+
+header a{
+    position: relative;
+    cursor: pointer;
+    transition: all .3s ease;
+    text-decoration: none;
+}
+
+header a img{
+    width: 60px;
+}
+
+header h1{
+    font-weight: 600;
+    font-size: 2rem;
+    color: var(--primary);
+}
+
+
+/* This is the project section */
+
+
+.projects{
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    padding-top: 12rem;
+    padding-bottom: 3rem;
+    background: var(--pure);
+}
+
+.projects p{
+    font-weight: 200;
+    font-size: 1.2rem;
+    text-align: justify;
+    margin-bottom: 1rem;
+    color: var(--secondary);
+}
+
+.projects p a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.projects p span{
+    font-weight: 400;
+    color: var(--primary);
+}
+
+.projects p a:hover span{
+    color: var(--secondary);
+}
+
+.projects .project{
+    text-align: justify;
+    align-items: flex-start;
+    align-content: flex-start;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    background-color: var(--light);
+    border: 2px solid transparent;
+    border-radius: 8px;
+    outline: none;
+    border-color: var(--light);
+    margin-top: 3rem;
+}
+
+.projects .project:hover{
+    border-color: var(--secondary);
+}
+
+.projects .project .project-name{
+    align-items: center;
+}
+
+.projects .project .title{
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: 1.25rem;
+    color: var(--secondary);
+}
+
+.projects .project .time{
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-bottom: 1.25rem;
+    color: var(--ternary);
+}
+
+.projects .project .technologies{
+    font-weight: 200;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    color: var(--ternary);
+}
+
+.projects .project a{
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--pure);
+    background-color: var(--secondary);
+    border-radius: 8px;
+    outline: none;
+    border-color: var(--secondary);
+    text-decoration: none;
+    cursor: pointer;
+    transition: all .3s ease;
+    padding: 8px 1rem;
+}
+
+.projects .project a:hover{
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+.projects .project .links{
+    flex-direction: row;
+}
+
+.projects .project .links a{
+    margin-right: 1rem;
+}
+
+.projects .project .description{
+    font-weight: 200;
+    font-size: 1rem;
+    text-align: justify;
+    color: var(--secondary);
+    margin-top: 2rem;
+}
+
+.projects .project .description .more{
+    display: none;
+}
+
+.projects .project .description .read-more{
+    font-weight: 400;
+    font-size: 1rem;
+    margin-top: 1rem;
+    color: var(--primary);
+    transition: all .3s ease;
+    cursor: pointer;
+}
+
+.projects .project .description .read-more:hover{
+    color: var(--secondary);
+}
+
+
+/* This is the footer section */
+
+
+footer{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background: var(--secondary);
+    text-align: center;
+}
+
+footer a{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+footer a img{
+    width: 250px;
+    height: 32px;
+}
+
+.fa-google-play{
+    color: var(--pure);
+}
+
+.fa-envelope{
+    color: var(--pure);
+}
+
+.fa-github{
+    color: var(--pure);
+}
+
+.fa-linkedin-in{
+    color: var(--pure);
+}
+
+.fa-twitter{
+    color: var(--pure);
+}
+
+.fa-facebook{
+    color: var(--pure);
+}
+
+.fa-instagram{
+    color: var(--pure);
+}
+
+.fa-google-play:hover{
+    color: var(--primary);
+}
+
+.fa-envelope:hover{
+    color: var(--primary);
+}
+
+.fa-github:hover{
+    color: var(--primary);
+}
+
+.fa-linkedin-in:hover{
+    color: var(--primary);
+}
+
+.fa-twitter:hover{
+    color: var(--primary);
+}
+
+.fa-facebook:hover{
+    color: var(--primary);
+}
+
+.fa-instagram:hover{
+    color: var(--primary);
+}
+
+footer .footer-wrap .footer-socials a{
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    cursor: pointer;
+}
+
+footer .footer-wrap .copyright h6{
+    color: var(--ternary);
+    font-weight: 200;
+    font-size: 0.8rem;
+}
+
+
+/* Responsive Design - Media Queries */
+
+/* Media Queries - 1052px max-width */
+
+
+@media (max-width: 1052px) {
+
+    .scrollTop{
+        position: fixed;
+        bottom: 800px;
+        right: 30px;
+        width: 40px;
+        height: 40px;
+        z-index: 1;
+        cursor: pointer;
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.5s;
+    }
+    
+    .scrollTop img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .scrollTop.active{
+        bottom: 30px;
+        visibility: visible;
+        opacity: 1;
+    }
+
+
+    /* This is the header(1052px) section */
+
+
+    header{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 32px 0;
+        background-color: var(--dark);
+        z-index: 1;
+        margin-bottom: 2rem;
+        transition: all 0.6s ease;
+    }
+
+    header.sticky{
+        padding: 24px 0;
+        background: var(--secondary);
+        transition: all 0.6s ease;
+    }
+
+    header a{
+        position: relative;
+        cursor: pointer;
+        transition: all .3s ease;
+        text-decoration: none;
+    }
+
+    header a img{
+        height: 45px;
+    }
+
+    header h1{
+        font-weight: 600;
+        font-size: 2rem;
+        color: var(--primary);
+    }
+
+
+    /* This is the projects(1052px) section */
+
+
+    .projects{
+        text-align: center;
+        align-items: center;
+        align-content: center;
+        padding-top: 10rem;
+        padding-bottom: 3rem;
+        background: var(--pure);
+    }
+
+    .projects p{
+        font-weight: 100;
+        font-size: 1rem;
+        text-align: justify;
+        margin-bottom: 1rem;
+        color: var(--secondary);
+    }
+    
+    .projects p a{
+        text-decoration: none;
+        cursor: pointer;
+    }
+    
+    .projects p span{
+        font-weight: 300;
+        color: var(--primary);
+    }
+
+    .projects .project{
+        text-align: justify;
+        align-items: flex-start;
+        align-content: flex-start;
+        padding-right: 1.2rem;
+        padding-left: 1.2rem;
+        padding-top: 1.2rem;
+        padding-bottom: 1.2rem;
+        background-color: var(--light);
+        border: 1.5px solid transparent;
+        border-radius: 8px;
+        outline: none;
+        border-color: var(--light);
+        margin-top: 3rem;
+    }
+    
+    .projects .project:hover{
+        border-color: var(--secondary);
+    }
+
+    .projects .project .project-name{
+        align-items: center;
+    }
+    
+    .projects .project .title{
+        font-weight: 500;
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+        color: var(--secondary);
+    }
+    
+    .projects .project .time{
+        font-weight: 300;
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+        color: var(--ternary);
+    }
+    
+    .projects .project .technologies{
+        font-weight: 100;
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+        color: var(--ternary);
+    }
+    
+    .projects .project a{
+        font-weight: 300;
+        font-size: 0.9rem;
+        color: var(--pure);
+        background-color: var(--secondary);
+        border-radius: 8px;
+        outline: none;
+        border-color: var(--secondary);
+        text-decoration: none;
+        cursor: pointer;
+        transition: all .3s ease;
+        padding: 8px 1rem;
+    }
+    
+    .projects .project a:hover{
+        background-color: var(--primary);
+        border-color: var(--primary);
+    }
+    
+    .projects .project .links{
+        flex-direction: row;
+    }
+    
+    .projects .project .links a{
+        margin-right: 1rem;
+    }
+    
+    .projects .project .description{
+        font-weight: 100;
+        font-size: 0.8rem;
+        text-align: justify;
+        color: var(--secondary);
+        margin-top: 1.5rem;
+    }
+    
+    .projects .project .description .more{
+        display: none;
+    }
+    
+    .projects .project .description .read-more{
+        font-weight: 300;
+        font-size: 0.85rem;
+        margin-top: 1rem;
+        color: var(--primary);
+        transition: all .3s ease;
+        cursor: pointer;
+    }
+    
+    .projects .project .description .read-more:hover{
+        color: var(--secondary);
+    }
+    
+
+    /* This is the footer(1052px) section */
+
+
+    footer{
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        background: var(--secondary);
+        text-align: center;
+    }
+    
+    footer a{
+        cursor: pointer;
+        text-decoration: none;
+    }
+    
+    footer a img{
+        width: 220px;
+        height: 28px;
+    }
+
+    footer .footer-wrap .footer-socials a{
+        padding-left: 0.25rem;
+        padding-right: 0.25rem;
+        cursor: pointer;
+    }
+    
+    footer .footer-wrap .copyright h6{
+        color: var(--ternary);
+        font-weight: 100;
+        font-size: 0.7rem;
+    }
+}
+
+
+/* Media Queries - 767.5px max-width */
+
+
+@media (max-width: 767.5px) {
+
+    .scrollTop{
+        position: fixed;
+        bottom: 800px;
+        right: 30px;
+        width: 32px;
+        height: 32px;
+        z-index: 1;
+        cursor: pointer;
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.5s;
+    }
+    
+    .scrollTop img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .scrollTop.active{
+        bottom: 30px;
+        visibility: visible;
+        opacity: 1;
+    }
+
+
+    /* This is the projects(767.5px) section */
+
+
+    .projects{
+        text-align: center;
+        align-items: center;
+        align-content: center;
+        padding-top: 10rem;
+        padding-bottom: 3rem;
+        background: var(--pure);
+    }
+
+    .projects p{
+        font-weight: 100;
+        font-size: 0.9rem;
+        text-align: justify;
+        margin-bottom: 1rem;
+        color: var(--secondary);
+    }
+    
+    .projects p a{
+        text-decoration: none;
+        cursor: pointer;
+    }
+    
+    .projects p span{
+        font-weight: 300;
+        color: var(--primary);
+    }
+
+    .projects .project{
+        text-align: justify;
+        align-items: flex-start;
+        align-content: flex-start;
+        padding-right: 1rem;
+        padding-left: 1rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        background-color: var(--light);
+        border: 1.5px solid transparent;
+        border-radius: 8px;
+        outline: none;
+        border-color: var(--light);
+        margin-top: 2.5rem;
+    }
+    
+    .projects .project:hover{
+        border-color: var(--secondary);
+    }
+
+    .projects .project .project-name{
+        align-items: center;
+    }
+    
+    .projects .project .title{
+        font-weight: 500;
+        font-size: 1rem;
+        margin-bottom: 1rem;
+        color: var(--secondary);
+    }
+    
+    .projects .project .time{
+        font-weight: 300;
+        font-size: 0.8rem;
+        margin-bottom: 1rem;
+        color: var(--ternary);
+    }
+    
+    .projects .project .technologies{
+        font-weight: 100;
+        font-size: 0.9rem;
+        margin-bottom: 1.5rem;
+        color: var(--ternary);
+    }
+    
+    .projects .project a{
+        font-weight: 300;
+        font-size: 0.8rem;
+        color: var(--pure);
+        background-color: var(--secondary);
+        border-radius: 8px;
+        outline: none;
+        border-color: var(--secondary);
+        text-decoration: none;
+        cursor: pointer;
+        transition: all .3s ease;
+        padding: 8px 1rem;
+    }
+    
+    .projects .project a:hover{
+        background-color: var(--primary);
+        border-color: var(--primary);
+    }
+    
+    .projects .project .links{
+        flex-direction: row;
+    }
+    
+    .projects .project .links a{
+        margin-right: 1rem;
+    }
+    
+    .projects .project .description{
+        font-weight: 100;
+        font-size: 0.75rem;
+        text-align: justify;
+        color: var(--secondary);
+        margin-top: 1.5rem;
+    }
+    
+    .projects .project .description .more{
+        display: none;
+    }
+    
+    .projects .project .description .read-more{
+        font-weight: 300;
+        font-size: 0.8rem;
+        margin-top: 1rem;
+        color: var(--primary);
+        transition: all .3s ease;
+        cursor: pointer;
+    }
+    
+    .projects .project .description .read-more:hover{
+        color: var(--secondary);
+    }
+
+
+    /* This is the footer(767.5px) section */
+
+
+    footer{
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        background: var(--secondary);
+        text-align: center;
+    }
+
+    .footer-inner-wrap{
+        flex-direction: column;
+    }
+    
+    footer a{
+        cursor: pointer;
+        text-decoration: none;
+        margin-bottom: 1.25rem;
+    }
+    
+    footer a img{
+        width: 220px;
+        height: 28px;
+    }
+
+    footer .footer-wrap .footer-socials{
+        margin-bottom: 1.25rem;
+    }
+
+    footer .footer-wrap .footer-socials a{
+        padding-left: 0.25rem;
+        padding-right: 0.25rem;
+        cursor: pointer;
+    }
+    
+    footer .footer-wrap .copyright h6{
+        color: var(--ternary);
+        font-weight: 100;
+        font-size: 0.7rem;
+    }
+
+}
+
+
+/* Media Queries - 575.5px max-width */
+
+
+@media (max-width: 575.5px){
+
+    .scrollTop{
+        position: fixed;
+        bottom: 800px;
+        right: 30px;
+        width: 32px;
+        height: 32px;
+        z-index: 1;
+        cursor: pointer;
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.5s;
+    }
+    
+    .scrollTop img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .scrollTop.active{
+        bottom: 30px;
+        visibility: visible;
+        opacity: 1;
+    }
+
+    header h1{
+        font-weight: 600;
+        font-size: 1.8rem;
+        color: var(--primary);
+    }
+
+
+    /* This is the projects(575.5px) section */
+
+
+    .projects{
+        text-align: center;
+        align-items: center;
+        align-content: center;
+        padding-top: 10rem;
+        padding-bottom: 3rem;
+        background: var(--pure);
+    }
+
+    .projects p{
+        font-weight: 200;
+        font-size: 0.8rem;
+        text-align: justify;
+        margin-bottom: 1rem;
+        color: var(--secondary);
+    }
+    
+    .projects p a{
+        text-decoration: none;
+        cursor: pointer;
+    }
+    
+    .projects p span{
+        font-weight: 300;
+        color: var(--primary);
+    }
+
+    .projects .project{
+        text-align: start;
+        align-items: flex-start;
+        align-content: flex-start;
+        padding-right: 1rem;
+        padding-left: 1rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        background-color: var(--light);
+        border: 1.5px solid transparent;
+        border-radius: 8px;
+        outline: none;
+        border-color: var(--light);
+        margin-top: 2.5rem;
+    }
+    
+    .projects .project:hover{
+        border-color: var(--secondary);
+    }
+
+    .projects .project .project-name{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .projects .project .title{
+        font-weight: 500;
+        font-size: 1rem;
+        margin-bottom: 1rem;
+        color: var(--secondary);
+    }
+    
+    .projects .project .time{
+        font-weight: 300;
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+        color: var(--secondary);
+    }
+    
+    .projects .project .technologies{
+        font-weight: 200;
+        font-size: 0.9rem;
+        margin-bottom: 1.5rem;
+        color: var(--ternary);
+    }
+    
+    .projects .project a{
+        font-weight: 300;
+        font-size: 0.8rem;
+        color: var(--pure);
+        background-color: var(--secondary);
+        border-radius: 8px;
+        outline: none;
+        border-color: var(--secondary);
+        text-decoration: none;
+        cursor: pointer;
+        transition: all .3s ease;
+        padding: 8px 1rem;
+    }
+    
+    .projects .project a:hover{
+        background-color: var(--primary);
+        border-color: var(--primary);
+    }
+    
+    .projects .project .links{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .projects .project .links a{
+        margin-right: 1rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .projects .project .description{
+        font-weight: 200;
+        font-size: 0.75rem;
+        text-align: justify;
+        color: var(--secondary);
+        margin-top: 1.5rem;
+    }
+    
+    .projects .project .description .more{
+        display: none;
+    }
+    
+    .projects .project .description .read-more{
+        font-weight: 300;
+        font-size: 0.8rem;
+        margin-top: 1rem;
+        color: var(--primary);
+        transition: all .3s ease;
+        cursor: pointer;
+    }
+    
+    .projects .project .description .read-more:hover{
+        color: var(--secondary);
+    }
+}

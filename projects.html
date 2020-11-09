@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Apoorva Ranjan - Projects</title>
+        <link rel="icon" href="images/logo-brief.svg" type="image/icon type">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/d93fe26843.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="stylesheet" href="css/project.css">
+        <link rel="stylesheet" href="css/transition.css">
+    </head>
+
+    <body>
+        <div class="project-main-wrapper">
+
+            <header>
+                <div id="main-nav" class="container flex items-center justify-between">
+                    <a href="index.html"><img src="images/logo-brief.svg" alt="Apoorva Ranjan"></a>
+                    <h1>Projects</h1>
+                </div>
+            </header>
+    
+            <script type="text/javascript">
+                window.addEventListener("scroll", function(){
+                    var header = document.querySelector("header");
+                    header.classList.toggle("sticky", window.scrollY > 0);
+                })
+            </script>
+
+            <div class="scrollTop" onclick="scrollToTop();">
+                <img src="images/scroll_to_top.svg" alt="Scroll To Top">
+            </div>
+
+            <script type="text/javascript">
+                window.addEventListener('scroll', function(){
+                    var scroll = document.querySelector('.scrollTop');
+                    scroll.classList.toggle("active", window.scrollY > 500)
+                })
+
+                function scrollToTop(){
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                    })
+                }
+            </script>
+
+            <section class="projects">
+                <div class="container">
+                    <p>This section contains a list of projects I've worked on or have been working on. The projects you'll find here are also available on my <a href="https://github.com/2apoorva5" target="_blank"><span>Github</span></a> (with some exclusions).</p>
+                    <p>These projects cover various technologies like <span>Android Development</span>, <span>Firebase</span>, <span>SQL</span>, <span>Business Intelligence - ETL & Reporting</span>, etc.</p>
+                    <p>The below projects list goes as <span>most recent first</span>.</p>
+
+                    <div class="project"
+                    data-aos="fade-up" 
+                    data-aos-offset="200"
+                    data-aos-delay="0"
+                    data-aos-duration="1500"
+                    data-aos-once="false">
+                        <div class="project-name flex justify-between">
+                            <h2 class="title">Job Vacancy Analysis - BI Project</h2>
+                            <h2 class="time">Sep 2020</h2>
+                        </div>
+                        <h3 class="technologies">Business Intelligence (ETL & Reporting) - SQL Server / SSMS / SSIS / Microsoft Power BI</h3>
+                        <a href="https://docs.google.com/presentation/d/e/2PACX-1vRp_6jIId92FP_BiR05qO8LViFaJxnpNqwfaAqjRC_o1WxrHKITsglIhmq3wfoGoj3DisT8hmagqfBg/pub?start=true&loop=true&delayms=10000" target="_blank">View Project</a>
+                        <div class="description">
+                            This project was completed in a team. By using the Agile Software Development technique, we analyzed the data provided and developed few Business Intelligence reports
+                            <span class="dots">...</span>
+                            <span class="more">by which user can easily check the latest posted jobs as per location, experience, pay rate and date, trend of jobs rolling out in different industry and companies, etc. My major role in this project was to manage the team and designing and developing the Power BI reports.</span>
+
+                            <h4 class="read-more">Read More</h4>
+                        </div>
+                    </div>
+
+                    <div class="project"
+                    data-aos="fade-up" 
+                    data-aos-offset="200"
+                    data-aos-delay="0"
+                    data-aos-duration="1500"
+                    data-aos-once="false">
+                        <div class="project-name flex justify-between">
+                            <h2 class="title">Walmart Sales Analysis - BI Project</h2>
+                            <h2 class="time">Sep 2020</h2>
+                        </div>
+                        <h3 class="technologies">Business Intelligence (ETL & Reporting) - SQL Server / SSMS / SSIS / SSAS / Microsoft Power BI</h3>
+                        <a href="https://docs.google.com/presentation/d/e/2PACX-1vTbZgemE--CTnUSdML-ApCRZTadIUx1VOzdymzRHEdTjpYAhCaJgStjFkHD2QQvai_2VfhSmbX4_qO9/pub?start=true&loop=true&delayms=10000" target="_blank">View Project</a>
+                        <div class="description">
+                            This is a Business Intelligence project to analyze the sales data provided for 45 different Walmart stores across the globe for three consecutive years. The
+                            <span class="dots">...</span>
+                            <span class="more">user can basically analyze the sales for different stores over different period of time - in days, months or years. Each store has its respective departments also whose sales data can be analyzed using the reports generated. A user can also see the trend in unemployment, CPI, Store Temperature, etc. over time for different stores or their respective departments.</span>
+
+                            <h4 class="read-more">Read More</h4>
+                        </div>
+                    </div>
+
+                    <div class="project"
+                    data-aos="fade-up" 
+                    data-aos-offset="200"
+                    data-aos-delay="0"
+                    data-aos-duration="1500"
+                    data-aos-once="false">
+                        <div class="project-name flex justify-between">
+                            <h2 class="title">Meetin' - A Video Conference Application</h2>
+                            <h2 class="time">Jul 2020 - Sep 2020</h2>
+                        </div>
+                        <h3 class="technologies">Android Development / Firebase - Authentication, Cloud Firestore, Storage, Cloud Messaging / Jitsi Meet SDK</h3>
+                        <a href="https://github.com/2apoorva5/Meetin---A-Video-Meeting-Conference-Application" target="_blank">View On Github</a>
+                        <div class="description">
+                            This project is for a video meeting/conference Android Application which uses Firebase as its back-end. It uses Firebase Authentication for authentication, Firebase
+                            <span class="dots">...</span>
+                            <span class="more">Cloud Firestore as its database, Firebase Cloud Storage as the storage and Firebase Cloud Messaging as the notification and messaging service. It uses Jitsi Meet SDK for the voice/video calling facility, which is built on top of WebClientRTC. You can also add multiple users for the voice or video call conference at the same time and also chat with other users while the call is still going on. You can also mute the audio or disable the video during the call. The application comes in with a great user interface and provides a fluid user experience to its end users.</span>
+
+                            <h4 class="read-more">Read More</h4>
+                        </div>
+                    </div>
+
+                    <div class="project"
+                    data-aos="fade-up" 
+                    data-aos-offset="200"
+                    data-aos-delay="0"
+                    data-aos-duration="1500"
+                    data-aos-once="false">
+                        <div class="project-name flex justify-between">
+                            <h2 class="title">NOTED - Don't Bother Remembering</h2>
+                            <h2 class="time">Jul 2020</h2>
+                        </div>
+                        <h3 class="technologies">Android Development / JAVA / Room Database</h3>
+                        <div class="links flex">
+                            <a href="https://github.com/2apoorva5/NOTED---Notes-Application-for-Android" target="_blank">View On Github</a>
+                            <a href="https://play.google.com/store/apps/details?id=com.developerdepository.noted" target="_blank">Get It On Google Play</a>
+                        </div>
+                        <div class="description">
+                            NOTED - Don't Bother Remembering is a note taking and saving application specifically designed and developed for android devices and available on Google Play for
+                            <span class="dots">...</span>
+                            <span class="more">download. You can add notes with colors, urls and images. You can also add voice notes and make the app read the same for you. You can search for your saved notes and delete & edit any note at any point of time. You can also share any saved note via various social media platforms. The app also comes in dark theme besides the default dark theme.</span>
+
+                            <h4 class="read-more">Read More</h4>
+                        </div>
+                    </div>
+
+                    <div class="project"
+                    data-aos="fade-up" 
+                    data-aos-offset="200"
+                    data-aos-delay="0"
+                    data-aos-duration="1500"
+                    data-aos-once="false">
+                        <div class="project-name flex justify-between">
+                            <h2 class="title">WALLIPI - FHD Wallpapers Android Application</h2>
+                            <h2 class="time">Jun 2020</h2>
+                        </div>
+                        <h3 class="technologies">Android Development / Kotlin / Firebase - Authentication, Cloud Firestore, Storage</h3>
+                        <div class="links flex">
+                            <a href="https://github.com/2apoorva5/WALLIPI---Full-HD-Wallpapers-for-Android" target="_blank">View On Github</a>
+                            <a href="https://play.google.com/store/apps/details?id=com.developerdepository.wallipi" target="_blank">Get It On Google Play</a>
+                        </div>
+                        <div class="description">
+                            WALLIPI which is available on Google Play for download, is your access to 1000+ free Full HD Wallpapers & Backgrounds - Wallpapers which fit your phone's screen
+                            <span class="dots">...</span>
+                            <span class="more">perfectly, even without cropping. WALLIPI contains a number of categories for wallpapers & backgrounds which you can choose from according to your need and choice. Each category contains a number of Full HD images which you can use as your phone's wallpaper. You can view any wallpaper beforehand to see how it will look on your phone's screen. You can set it instantly without even downloading. Yeah, but that doesn't mean you cannot download it - You can also download your wallpaper of choice as and when you want. You can also share any wallpaper via social media to your friends and mates.</span>
+
+                            <h4 class="read-more">Read More</h4>
+                        </div>
+                    </div>
+
+                    <div class="project"
+                    data-aos="fade-up" 
+                    data-aos-offset="200"
+                    data-aos-delay="0"
+                    data-aos-duration="1500"
+                    data-aos-once="false">
+                        <div class="project-name flex justify-between">
+                            <h2 class="title">SAID - Quick Audio Recording</h2>
+                            <h2 class="time">Jun 2020</h2>
+                        </div>
+                        <h3 class="technologies">Android Development / JAVA / Android Jetpack Navigation Components</h3>
+                        <div class="links flex">
+                            <a href="https://github.com/2apoorva5/SAID---Quick-Audio-Recording" target="_blank">View On Github</a>
+                            <a href="https://play.google.com/store/apps/details?id=com.developerdepository.said" target="_blank">Get It On Google Play</a>
+                        </div>
+                        <div class="description">
+                            SAID - Quick Audio Recording for Android implemented using Android Jetpack Navigation Components is a free and easy to use audio recorder specifically designed for
+                            <span class="dots">...</span>
+                            <span class="more">high-quality and long-time recording with a clean and simple User Interface. It is available for download on Google Play. This audio recorder provides high-quality recordings without any time limit - limited only by memory size (quite obvious why). You can use it for recording voice notes and memos, business meetings, interviews, lectures, speeches, concerts, sleep talking :) or anything else. The recorded audios will be saved in the device's internal memory.</span>
+
+                            <h4 class="read-more">Read More</h4>
+                        </div>
+                    </div>
+
+                    <div class="project"
+                    data-aos="fade-up" 
+                    data-aos-offset="200"
+                    data-aos-delay="0"
+                    data-aos-duration="1500"
+                    data-aos-once="false">
+                        <div class="project-name flex justify-between">
+                            <h2 class="title">knowAlledge : A Quiz Android Application</h2>
+                            <h2 class="time">May 2020 - Jun 2020</h2>
+                        </div>
+                        <h3 class="technologies">Android Development / JAVA / Jetpack Navigation Components / Firebase - Authentication, Cloud Firestore, Storage</h3>
+                        <a href="https://github.com/2apoorva5/KnowALLedge---Quiz-Application" target="_blank">View On Github</a>
+                        <div class="description">
+                            The project is for an Android Quiz Application named "knowALLedge". The app is made using Jetpack Navigation Component in combination with Firestore MVVM
+                            <span class="dots">...</span>
+                            <span class="more">architecture. The app comes with quiz on different topics which have random questions each time you take the quiz. Your score for each quiz category will be saved in the database each time you take the quiz. The database used here is Cloud Firestore provided by Firebase.</span>
+
+                            <h4 class="read-more">Read More</h4>
+                        </div>
+                    </div>
+
+                    <div class="project"
+                    data-aos="fade-up" 
+                    data-aos-offset="200"
+                    data-aos-delay="0"
+                    data-aos-duration="1500"
+                    data-aos-once="false">
+                        <div class="project-name flex justify-between">
+                            <h2 class="title">COVID-19 Tracker Android Application</h2>
+                            <h2 class="time">Apr 2020</h2>
+                        </div>
+                        <h3 class="technologies">Android Development / JAVA / Kotlin / Rest API / Volley</h3>
+                        <a href="https://github.com/2apoorva5/COVID-19_Tracker---Application-for-Android" target="_blank">View On Github</a>
+                        <div class="description">
+                            This app provides latest updates regarding the novel Corona Virus which originated in Dec, 2019. The app provides us constant information about the number of
+                            <span class="dots">...</span>
+                            <span class="more">cases, number of deaths, number of recoveries, number of tests, etc. all around the world. There is also a section to monitor the scenario in India where you can monitor the number of cases, deaths, recoveries and active cases in all the states of India. The app also comes with information about Corona Virus like symptoms, prevention, myths, etc.</span>
+
+                            <h4 class="read-more">Read More</h4>
+                        </div>
+                    </div>
+
+                    <div class="project"
+                    data-aos="fade-up" 
+                    data-aos-offset="200"
+                    data-aos-delay="0"
+                    data-aos-duration="1500"
+                    data-aos-once="false">
+                        <div class="project-name flex justify-between">
+                            <h2 class="title">FitBeetles - Fitness Centre Booking App</h2>
+                            <h2 class="time">Aug 2019 - Nov 2019</h2>
+                        </div>
+                        <h3 class="technologies">Android Development / JAVA / Firebase - Authentication, Cloud Firestore, Storage</h3>
+                        <a href="https://github.com/2apoorva5/FitBeetles---Fitness-Centre-Booking" target="_blank">View On Github</a>
+                        <div class="description">
+                            This is an android application through which you can search and book your favourite fitness and sports facilities in your city of choice. You can also filter out
+                            <span class="dots">...</span>
+                            <span class="more">your search based on different fitness forms available right in the app itself. For login, there are options for Google authentication and Facebook authentication implemented using Firebase. The database of the project lies in Cloud Firestore - A Google Firebase Cloud database.</span>
+
+                            <h4 class="read-more">Read More</h4>
+                        </div>
+                    </div>
+
+                    <div class="project"
+                    data-aos="fade-up" 
+                    data-aos-offset="200"
+                    data-aos-delay="0"
+                    data-aos-duration="1500"
+                    data-aos-once="false">
+                        <div class="project-name flex justify-between">
+                            <h2 class="title">Food@Door - DINE | SNACK | CHEER</h2>
+                            <h2 class="time">Jan 2019 - Apr 2019</h2>
+                        </div>
+                        <h3 class="technologies">Android Development / JAVA / Firebase - Authentication, Realtime Database, Storage, Cloud Messaging</h3>
+                        <a href="https://github.com/2apoorva5/FoodDoor---Food-Ordering-Application-for-Android" target="_blank">View On Github</a>
+                        <div class="description">
+                            This is an android application which enables you to order food from restaurant online. The application comes with many functionalities besides ordering food like you
+                            <span class="dots">...</span>
+                            <span class="more">can share your favorite meal on social media, add foods to your favorites list, track your order, etc. You will also have multiple options for login flow in this application including Email Auth, Google Auth and Facebook Auth which has been implemented using Firebase Authentication. The database and storage for the project lies in the Firebase too which is a Google provided Online Server for managing mobile applications. The application will also provide you push notifications about your order status which has been implemented using Firebase Cloud Messaging. The project consists of a server side android application too for managing the restaurant menus and order status updation.</span>
+
+                            <h4 class="read-more">Read More</h4>
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
+
+            <footer>
+                <div class="footer-wrap container flex items-center justify-between footer-inner-wrap">
+                    <a href="index.html"><img src="images/logo.svg" alt="Apoorva Ranjan"></a>
+                    <div class="footer-socials">
+                        <a href="https://play.google.com/store/apps/developer?id=Developer+Depository&hl=en_US" target="_blank"><i class="fab fa-google-play fa-sm"></i></a>
+                        <a href="mailto:apoorvaranjan025@gmail.com"><i class="fas fa-envelope fa-sm"></i></a>
+                        <a href="https://github.com/2apoorva5" target="_blank"><i class="fab fa-github fa-sm"></i></a>
+                        <a href="https://www.linkedin.com/in/2apoorva5/" target="_blank"><i class="fab fa-linkedin-in fa-sm"></i></a>
+                        <a href="https://twitter.com/2apoorva5" target="_blank"><i class="fab fa-twitter fa-sm"></i></a>
+                        <a href="https://www.facebook.com/apoorva025" target="_blank"><i class="fab fa-facebook fa-sm"></i></a>
+                        <a href="https://instagram.com/2apoorva5" target="_blank"><i class="fab fa-instagram fa-sm"></i></a>
+                    </div>
+                    <div class="copyright">
+                        <h6>&#xA9; 2020 by Apoorva Ranjan   &#x7c;   All rights reserved.</h6>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <script type="text/javascript" src="./js/app.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+
+        <script>
+            $(document).ready(function(){
+                $(".read-more").click(function(){
+                    $(this).prev().toggle();
+                    $(this).siblings('.dots').toggle();
+                    if($(this).text()=='Read More'){
+                        $(this).text('Read Less');
+                    }
+                    else{
+                        $(this).text('Read More');
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>

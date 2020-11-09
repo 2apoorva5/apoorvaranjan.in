@@ -1,0 +1,3410 @@
+@import 'utilities.css';
+
+:root{
+    --primary:#32DE84;
+    --secondary: #000000;
+    --dark:#03151E;
+    --pure:#FFFFFF;
+    --ternary:#828282;
+    --light:#F2F2F2;
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+.container{
+    max-width: 1152px;
+    padding: 0 1rem;
+    margin: 0 auto;
+}
+
+@media(min-width: 576px){
+    .container{
+        max-width: 540px;
+    }
+}
+
+@media(min-width: 768px){
+    .container{
+        max-width: 720px;
+    }
+}
+
+@media(min-width: 1052px){
+    .container{
+        max-width: 1000px;
+    }
+}
+
+@media(min-width: 1200px){
+    .container{
+        max-width: 1152px;
+    }
+}
+
+.scrollTop{
+    position: fixed;
+    bottom: 800px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    z-index: 1;
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.scrollTop img{
+    width: 100%;
+    height: 100%;
+}
+
+.scrollTop.active{
+    bottom: 30px;
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/* This is the header section */
+
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 3rem 0;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 1;
+    margin-bottom: 2rem;
+    transition: all 0.6s ease;
+}
+
+header.sticky{
+    padding: 1.5rem 0;
+    background: var(--secondary);
+    transition: all 0.6s ease;
+}
+
+header a{
+    position: relative;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+header a img{
+    width: 350px;
+    height: 45px;
+}
+
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li{
+    position: relative;
+    list-style: none;
+    margin-right: 2rem;
+}
+
+header ul li a{
+    position: relative;
+    font-weight: 500;
+    font-size: 1rem;
+    cursor: pointer;
+    color: var(--pure);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+header ul li a:hover{
+    color: var(--primary);
+}
+
+
+/* This is the intro section */
+
+
+.intro{
+    background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), url(../images/intro.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 75% 90%, 0 100%);
+}
+
+.intro .hero{
+    padding-top: 12rem;
+}
+
+.intro .hero .right img{
+    width: 500px;
+    height: 500px;
+}
+
+.intro .hero .left{
+    color: var(--pure);
+}
+
+.intro .hero .left h1{
+    font-weight: 700;
+    font-size: 5rem;
+    text-align: justify;
+    color: var(--primary);
+}
+
+#spin {
+    color:var(--primary);
+}
+
+#spin:after {
+    content:"Hello!";
+    animation: spin 5s linear infinite;
+}
+
+@keyframes spin {
+    20% { content: "Hola!"; }
+    40% { content: "Bonjour!"; }
+    60% { content: "Ciao!"; }
+    80% { content: "Salve!"; }
+}
+
+.intro .hero .left h6{
+    font-weight: 400;
+    font-size: 1.8rem;
+    text-align: justify;
+    margin-bottom: 2rem;
+}
+
+.intro .hero .left p{
+    font-weight: 200;
+    font-size: 1.2rem;
+    text-align: justify;
+    margin-bottom: 3rem;
+}
+
+.intro .hero .left p span{
+    font-weight: 400;
+    color: var(--primary);
+}
+
+.intro .hero .left div .resume-btn{
+    margin-right: 2rem;
+}
+
+
+/* This is the about section */
+
+
+.about{
+    padding-top: 4rem;
+    padding-bottom: 5rem;
+    color: var(--secondary);
+}
+
+.about .container .left img{
+    width: 400px;
+    height: 460px;
+}
+
+.about .container .right h1{
+    font-weight: 700;
+    font-size: 2.5rem;
+    text-align: justify;
+    margin-bottom: 1.5rem;
+}
+
+.about .container .right h1 span{
+    color: var(--primary);
+}
+
+.about .container .right h6{
+    font-weight: 400;
+    font-size: 1.8rem;
+    text-align: justify;
+    margin-bottom: 2rem;
+}
+
+.about .container .right .p1{
+    font-weight: 200;
+    font-size: 1.2rem;
+    text-align: justify;
+    margin-bottom: 1.5rem;
+}
+
+.about .container .right .p1 span{
+    font-weight: 400;
+    color: var(--primary);
+}
+
+.about .container .right .p2{
+    font-weight: 200;
+    font-size: 1.2rem;
+    text-align: justify;
+    margin-bottom: 2rem;
+}
+
+.about .container .right .p2 span{
+    font-weight: 400;
+    color: var(--primary);
+}
+
+.about .container .right .p3{
+    font-weight: 200;
+    font-size: 1.2rem;
+    text-align: justify;
+    margin-bottom: 2rem;
+}
+
+.about .container .right .p3 span{
+    font-weight: 400;
+    color: var(--primary);
+}
+
+.about .container .right .p4{
+    font-weight: 400;
+    font-size: 1.2rem;
+    text-align: justify;
+    margin-bottom: 2rem;
+}
+
+.about .container .right .p4 a{
+    color: var(--primary);
+    text-decoration: none;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.about .container .right .p4 a:hover{
+    color: var(--secondary);
+}
+
+.about .container .right div a{
+    cursor: pointer;
+    margin-right: 0.25rem;
+}
+
+.about .container .right .about-socials a img{
+    width: 60px;
+    height: 60px;
+    padding: 5px;
+    transition: all .3s ease;
+}
+
+.about .container .right .about-socials a img:hover{
+    width: 60px;
+    height: 60px;
+    padding: 0px;
+}
+
+
+/* This is the skills section */
+
+
+.skills{
+    padding-top: 4rem;
+    padding-bottom: 6rem;
+    color: var(--pure);
+    background: var(--dark);
+    clip-path: polygon(0 0%, 100% 0, 100% 95%, 0 100%);
+}
+
+.skills .container .right img{
+    width: 450px;
+    height: 450px;
+}
+
+.skills .container .left{
+    margin-right: 4rem;
+}
+
+.skills .container .left h1{
+    font-weight: 700;
+    font-size: 2.5rem;
+    text-align: justify;
+    margin-bottom: 1.5rem;
+}
+
+.skills .container .left h1 span{
+    color: var(--primary);
+}
+
+.skills .container .left .p1{
+    font-weight: 200;
+    font-size: 1.2rem;
+    text-align: justify;
+    margin-bottom: 1.5rem;
+}
+
+.skills .container .left .p1 span{
+    font-weight: 400;
+    color: var(--primary);
+}
+
+.skills .container .left .p2{
+    font-weight: 200;
+    font-size: 1.2rem;
+    text-align: justify;
+    margin-bottom: 2rem;
+}
+
+.skills .container .left .p2 span{
+    font-weight: 400;
+    color: var(--primary);
+}
+
+.skills .container .left .p3{
+    font-weight: 200;
+    font-size: 1.2rem;
+    text-align: justify;
+    margin-bottom: 2rem;
+}
+
+
+/* This is the skills - top skills section */
+
+
+.skills .container .left .skills-area1{
+    width: 100%;
+    position: relative;
+    padding-bottom: 2rem;
+}
+
+.skills .container .left .skills-area1 h6{
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: var(--primary);
+    margin-bottom: 1.5rem;
+}
+
+.skills .container .left .skills-area1 li{
+    position: relative;
+    list-style: none;
+    margin-bottom: 2.5rem;
+    color: var(--pure);
+    font-size: 0.85rem;
+    font-weight: 200;
+}
+
+.skills .container .left .skills-area1 li::before{
+    content: "";
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background-color: var(--primary);
+    opacity: 0.33;
+    border-radius: 4px;
+}
+
+.skills .container .left .skills-area1 li::after{
+    content: "";
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    width: 0;
+    height: 8px;
+    background-color: var(--primary);
+    opacity: 1.0;
+    border-radius: 4px;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+.skills .container .left .skills-area1 li.skill1::after{
+    animation-name: skill1;
+}
+
+@keyframes skill1{
+    to{
+        width: 90%;
+    }
+}
+
+.skills .container .left .skills-area1 li.skill2::after{
+    animation-name: skill2;
+}
+
+@keyframes skill2{
+    to{
+        width: 85%;
+    }
+}
+
+.skills .container .left .skills-area1 li.skill3::after{
+    animation-name: skill3;
+}
+
+@keyframes skill3{
+    to{
+        width: 80%;
+    }
+}
+
+
+/* This is the skills - languages section */
+
+
+.skills .container .left .skills-area2{
+    width: 100%;
+    position: relative;
+    padding-bottom: 2rem;
+}
+
+.skills .container .left .skills-area2 h6{
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: var(--primary);
+    margin-bottom: 1.5rem;
+}
+
+.skills .container .left .skills-area2 li{
+    position: relative;
+    list-style: none;
+    margin-bottom: 2.5rem;
+    color: var(--pure);
+    font-size: 0.85rem;
+    font-weight: 200;
+}
+
+.skills .container .left .skills-area2 li::before{
+    content: "";
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background-color: var(--primary);
+    opacity: 0.33;
+    border-radius: 4px;
+}
+
+.skills .container .left .skills-area2 li::after{
+    content: "";
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    width: 0;
+    height: 8px;
+    background-color: var(--primary);
+    opacity: 1.0;
+    border-radius: 4px;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+.skills .container .left .skills-area2 li.skill4::after{
+    animation-name: skill4;
+}
+
+@keyframes skill4{
+    to{
+        width: 70%;
+    }
+}
+
+.skills .container .left .skills-area2 li.skill5::after{
+    animation-name: skill5;
+}
+
+@keyframes skill5{
+    to{
+        width: 35%;
+    }
+}
+
+.skills .container .left .skills-area2 li.skill6::after{
+    animation-name: skill6;
+}
+
+@keyframes skill6{
+    to{
+        width: 40%;
+    }
+}
+
+
+/* This is the skills - other tools & technologies section */
+
+
+.skills .container .left .skills-area3{
+    width: 100%;
+    position: relative;
+    padding-bottom: 2rem;
+}
+
+.skills .container .left .skills-area3 h6{
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: var(--primary);
+    margin-bottom: 1.5rem;
+}
+
+.skills .container .left .skills-area3 li{
+    position: relative;
+    list-style: none;
+    margin-bottom: 2.5rem;
+    color: var(--pure);
+    font-size: 0.85rem;
+    font-weight: 200;
+}
+
+.skills .container .left .skills-area3 li::before{
+    content: "";
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background-color: var(--primary);
+    opacity: 0.33;
+    border-radius: 4px;
+}
+
+.skills .container .left .skills-area3 li::after{
+    content: "";
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    width: 0;
+    height: 8px;
+    background-color: var(--primary);
+    opacity: 1.0;
+    border-radius: 4px;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+.skills .container .left .skills-area3 li.skill7::after{
+    animation-name: skill7;
+}
+
+@keyframes skill7{
+    to{
+        width: 90%;
+    }
+}
+
+.skills .container .left .skills-area3 li.skill8::after{
+    animation-name: skill8;
+}
+
+@keyframes skill8{
+    to{
+        width: 70%;
+    }
+}
+
+.skills .container .left .skills-area3 li.skill9::after{
+    animation-name: skill9;
+}
+
+@keyframes skill9{
+    to{
+        width: 40%;
+    }
+}
+
+.skills .container .left .skills-area3 li.skill10::after{
+    animation-name: skill10;
+}
+
+@keyframes skill10{
+    to{
+        width: 60%;
+    }
+}
+
+
+/* This is the experience section */
+
+
+.experience{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    color: var(--secondary);
+}
+
+.experience .timeline{
+    position: relative;
+    margin: 2rem auto;
+    box-sizing: border-box;
+}
+
+.experience .experience-title{
+    margin-bottom: 4rem;
+}
+
+.experience .experience-title h1{
+    font-weight: 700;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.experience .experience-title h1 span{
+    color: var(--primary);
+}
+
+.experience .timeline::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    background: var(--ternary);
+}
+
+.experience .timeline ul{
+    margin: 0;
+    padding: 0;
+}
+
+.experience .timeline ul li{
+    list-style: none;
+    position: relative;
+    width: 50%;
+    padding: 20px 40px;
+    box-sizing: border-box;
+}
+
+.experience .timeline ul li:nth-child(odd){
+    float: left;
+    clear: both;
+}
+
+.experience .timeline ul li:nth-child(even){
+    float: right;
+    clear: both;
+}
+
+.experience .timeline ul li:nth-child(odd)::before{
+    content: '';
+    position: absolute;
+    top: 28px;
+    right: -6px;
+    width: 10px;
+    height: 10px;
+    background: var(--primary);
+    border-radius: 50%;
+    box-shadow: 0 0 0 5px rgba(50, 222, 132, 0.33);
+}
+
+.experience .timeline ul li:nth-child(even)::before{
+    content: '';
+    position: absolute;
+    top: 28px;
+    left: -4px;
+    width: 10px;
+    height: 10px;
+    background: var(--primary);
+    border-radius: 50%;
+    box-shadow: 0 0 0 5px rgba(50, 222, 132, 0.33);
+}
+
+.experience .timeline ul li .content{
+    padding-bottom: 1rem;
+}
+
+.experience .timeline ul li:nth-child(odd) .content{
+    text-align: right;
+}
+
+.experience .timeline ul li:nth-child(even) .content{
+    text-align: left;
+}
+
+.experience .timeline ul li .content h3{
+    padding: 0;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: var(--primary);
+}
+
+.experience .timeline ul li .content h4{
+    padding: 0;
+    margin-bottom: 1rem;
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--secondary);
+}
+
+.experience .timeline ul li .content p{
+    padding: 0;
+    font-weight: 200;
+    font-size: 1rem;
+    color: var(--secondary);
+    margin-bottom: 1rem;
+}
+
+.experience .timeline ul li .time{
+    position: absolute;
+    top: 14px;
+    margin: 0;
+    text-align: center;
+    min-width: 220px;
+    padding: 8px 20px;
+    background: var(--primary);
+    color: var(--pure);
+    border-radius: 25px;
+    box-shadow: 0 0 0 4px rgba(50, 222, 132, 0.33);
+}
+
+.experience .timeline ul li .time h4{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.experience .timeline ul li:nth-child(odd) .time{
+    right: -260px;
+}
+
+.experience .timeline ul li:nth-child(even) .time{
+    left: -260px;
+}
+
+
+/* This is the services section */
+
+
+.services{
+    background: var(--light);
+    padding-top: 4rem;
+    padding-bottom: 5rem;
+}
+
+.services .container h1{
+    font-weight: 700;
+    font-size: 2.5rem;
+    text-align: center;
+    color: var(--secondary);
+    margin-bottom: 7rem;
+}
+
+.services .container h1 span{
+    color: var(--primary);
+}
+
+.services .container .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 2rem;
+    grid-row-gap: 6rem;
+}
+
+.services .container .card-wrapper .card{
+    background: var(--pure);
+    padding: 2rem 1.8rem;
+    padding-top: 4rem;
+    color: var(--secondary);
+    position: relative;
+    border-radius: 8px;
+    text-align: center;
+    transition: all .3s ease;
+}
+
+.services .container .card-wrapper .card img{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.services .container .card-wrapper .card h3{
+    font-weight: 500;
+    font-size: 1.25rem;
+    margin: 1rem;
+    color: var(--secondary);
+}
+
+.services .container .card-wrapper .card p{
+    font-weight: 200;
+    font-size: 1rem;
+    color: var(--ternary);
+}
+
+.services .container .card-wrapper .card:hover{
+    background: var(--secondary);
+}
+
+.services .container .card-wrapper .card:hover h3{
+    color: var(--pure);
+}
+
+.services .container .card-wrapper .card:hover p{
+    color: var(--light);
+}
+
+
+/* This is the freelancer section */
+
+
+.freelancer{
+    padding-top: 6rem;
+    padding-bottom: 10rem;
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(../images/freelancing.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 75% 85%, 0 100%);
+}
+
+.freelancer .container h3{
+    padding-left: 3rem;
+    padding-right: 3rem;
+    font-weight: 500;
+    font-size: 2.5rem;
+    color: var(--pure);
+    margin-bottom: 2rem;
+}
+
+.freelancer .container p{
+    padding-left: 4rem;
+    padding-right: 4rem;
+    font-weight: 200;
+    font-size: 1.25rem;
+    color: var(--light);
+    margin-bottom: 3rem;
+}
+
+.freelancer .container p span{
+    font-weight: 400;
+    color: var(--primary);
+}
+
+
+/* This is the recommendations section */
+
+
+.recommendations{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    text-align: center;
+}
+
+.recommendations .container h1{
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: var(--primary);
+    margin-bottom: 1.5rem;
+}
+
+.recommendations .container p{
+    font-weight: 200;
+    padding-left: 8rem;
+    padding-right: 8rem;
+    font-size: 1.2rem;
+    color: var(--secondary);
+    margin-bottom: 4rem;
+}
+
+.recommendations .container .slider .slide{
+    text-align: center;
+    display: flex;
+    min-height: 0;
+    min-width: 0;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+.recommendations .container .slider .slide img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 2.5rem;
+}
+
+.recommendations .container .slider .slide p{
+    font-weight: 200;
+    font-size: 1rem;
+    color: var(--ternary);
+    margin-bottom: 1.5rem;
+}
+
+.recommendations .container .slider .slide a{
+    cursor: pointer;
+    text-decoration: none;
+    transition: all .3s ease;
+}
+
+.recommendations .container .slider .slide a span{
+    font-weight: 400;
+    font-size: 0.9rem;
+    color: var(--secondary);
+}
+
+.recommendations .container .slider .slide a:hover span{
+    color: var(--primary);
+}
+
+.recommendations .container .slider-dots{
+    margin-top: 2rem;
+}
+
+.recommendations .container .slider-dots .dots{
+    list-style-type: none;
+    display: flex!important;
+    justify-content: center;
+}
+
+.recommendations .container .slider-dots button{
+    font-size: 0;
+    width: 10px;
+    height: 6px;
+    margin-right: 0.5rem;
+    border: none;
+    outline: none;
+    background: var(--ternary);
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.recommendations .container .slider-dots .dots li.slick-active button{
+    background: var(--primary);
+    width: 20px;
+}
+
+
+/* This is the contact section */
+
+
+.contact{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    background: var(--light);
+}
+
+.contact .container h1{
+    font-weight: 700;
+    font-size: 2.5rem;
+    text-align: center;
+    color: var(--secondary);
+    margin-bottom: 2rem;
+}
+
+.contact .container h1 span{
+    color: var(--primary);
+}
+
+.contact .container .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+}
+
+.contact .container .card-wrapper .card{
+    text-align: center;
+}
+
+.contact .container .card-wrapper .card img{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 1rem;
+}
+
+.contact .container .card-wrapper .card h3{
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: var(--secondary);
+    margin-bottom: 1rem;
+    padding: 0 2rem;
+}
+
+.contact .container .card-wrapper .card h6{
+    font-weight: 200;
+    font-size: 1rem;
+    color: var(--ternary);
+    padding: 0 2rem;
+}
+
+.contact .container .card-wrapper .card a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.contact .container .card-wrapper .card a:hover h6{
+    color: var(--primary);
+}
+
+
+/* This is the footer section */
+
+
+footer{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background: var(--secondary);
+    text-align: center;
+}
+
+footer a{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+footer a img{
+    width: 250px;
+    height: 32px;
+}
+
+.fa-google-play{
+    color: var(--pure);
+}
+
+.fa-envelope{
+    color: var(--pure);
+}
+
+.fa-github{
+    color: var(--pure);
+}
+
+.fa-linkedin-in{
+    color: var(--pure);
+}
+
+.fa-twitter{
+    color: var(--pure);
+}
+
+.fa-facebook{
+    color: var(--pure);
+}
+
+.fa-instagram{
+    color: var(--pure);
+}
+
+.fa-google-play:hover{
+    color: var(--primary);
+}
+
+.fa-envelope:hover{
+    color: var(--primary);
+}
+
+.fa-github:hover{
+    color: var(--primary);
+}
+
+.fa-linkedin-in:hover{
+    color: var(--primary);
+}
+
+.fa-twitter:hover{
+    color: var(--primary);
+}
+
+.fa-facebook:hover{
+    color: var(--primary);
+}
+
+.fa-instagram:hover{
+    color: var(--primary);
+}
+
+footer .footer-wrap .footer-socials a{
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    cursor: pointer;
+}
+
+footer .footer-wrap .copyright h6{
+    color: var(--ternary);
+    font-weight: 200;
+    font-size: 0.8rem;
+}
+
+
+/* Responsive Design - Media Queries */
+
+
+.site-main-wrapper{
+    position: relative;
+}
+
+.mobile-nav{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 1;
+}
+
+.mobile-nav a{
+    position: absolute;
+    top: 32px;
+    left: 1rem;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.mobile-nav a img{
+    width: 60px;
+}
+
+.mobile-nav .hamburger{
+    position: absolute;
+    top: 32px;
+    right: 1rem;
+    z-index: 1;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.mobile-nav .hamburger img{
+    width: 32px;
+    height: 32px;
+}
+
+.mobile-nav-menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 80px;
+    padding-left: 40px;
+    padding-right: 32px;
+    z-index: 2;
+    background: var(--dark);
+    width: 100%;
+    height: 100%;
+    transform: translateX(-100%);
+    transition: all 0.5s ease-in-out;
+}
+
+.openmenu{
+    transform: translateX(0);
+}
+
+.mobile-nav-menu .closemenu{
+    position: absolute;
+    top: 32px;
+    right: 32px;
+    z-index: 1;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.mobile-nav-menu .closemenu img{
+    width: 32px;
+    height: 32px;
+}
+
+.mobile-nav-menu ul{
+    list-style-type: none;
+}
+
+.mobile-nav-menu ul li{
+    margin-bottom: 1rem;
+}
+
+.mobile-nav-menu ul li a{
+    color: var(--pure);
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.mobile-nav-menu ul li a:hover{
+    color: var(--primary);
+}
+
+
+/* Media Queries - 1052px max-width */
+
+
+@media (max-width: 1052px) {
+
+    .scrollTop{
+        position: fixed;
+        bottom: 800px;
+        right: 30px;
+        width: 40px;
+        height: 40px;
+        z-index: 1;
+        cursor: pointer;
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.5s;
+    }
+    
+    .scrollTop img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .scrollTop.active{
+        bottom: 30px;
+        visibility: visible;
+        opacity: 1;
+    }
+
+
+    /* This is the header(1052px) section */
+
+    
+    header{
+        display: none;
+    }
+
+
+    /* This is the intro(1052px) section */
+
+
+    .intro{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 80% 95%, 0 100%);
+    }
+
+    .intro .hero{
+        padding-top: 8rem;
+    }
+
+    .intro .hero .right img{
+        width: 320px;
+        height: 320px;
+    }
+
+    .intro .hero .left h1{
+        font-weight: 600;
+        font-size: 4rem;
+        color: var(--primary);
+    }
+
+    .intro .hero .left h6{
+        font-weight: 300;
+        font-size: 1.5rem;
+        text-align: justify;
+        margin-bottom: 1rem;
+    }
+    
+    .intro .hero .left p{
+        font-weight: 100;
+        font-size: 1rem;
+        text-align: justify;
+        margin-bottom: 2rem;
+    }
+
+    .intro .hero .left p span{
+        font-weight: 300;
+    }
+
+    .intro .hero .left div .resume-btn{
+        margin-right: 1.5rem;
+    }
+
+    .intro .hero .left div .resume-btn button{
+        padding: 0.6rem 2rem;
+        font-size: 0.8rem;
+    }
+
+    .intro .hero .left div .contact-btn button{
+        padding: 0.6rem 2rem;
+        font-size: 0.8rem;
+    }
+
+
+    /* This is the about(1052px) section */
+
+
+    .about{
+        padding-top: 4rem;
+        padding-bottom: 3rem;
+        color: var(--secondary);
+    }
+
+    .about .container .left img{
+        width: 250px;
+        height: 290px;
+    }
+    
+    .about .container .right h1{
+        font-weight: 600;
+        font-size: 2rem;
+        text-align: justify;
+        margin-bottom: 1rem;
+    }
+    
+    .about .container .right h6{
+        font-weight: 300;
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .about .container .right .p1{
+        font-weight: 100;
+        font-size: 1rem;
+        text-align: justify;
+        margin-bottom: 0.8rem;
+    }
+
+    .about .container .right .p1 span{
+        font-weight: 300;
+    }
+    
+    .about .container .right .p2{
+        font-weight: 100;
+        font-size: 1rem;
+        text-align: justify;
+        margin-bottom: 1rem;
+    }
+
+    .about .container .right .p2 span{
+        font-weight: 300;
+    }
+
+    .about .container .right .p3{
+        font-weight: 100;
+        font-size: 1rem;
+        text-align: justify;
+        margin-bottom: 1rem;
+    }
+
+    .about .container .right .p3 span{
+        font-weight: 300;
+    }
+    
+    .about .container .right .p4{
+        font-weight: 300;
+        font-size: 1rem;
+        text-align: justify;
+        margin-bottom: 1rem;
+    }
+    
+    .about .container .right .p4 a:hover{
+        color: var(--secondary);
+    }
+    
+    .about .container .right div a{
+        cursor: pointer;
+        margin-right: 0.2rem;
+    }
+    
+    .about .container .right .about-socials a img{
+        width: 40px;
+        height: 40px;
+        padding: 4px;
+        transition: all .3s ease;
+    }
+
+    .about .container .right .about-socials a img:hover{
+        width: 40px;
+        height: 40px;
+        padding: 0px;
+    }
+
+
+    /* This is the skills(1052px) section */
+
+
+    .skills{
+        padding-top: 4rem;
+        padding-bottom: 2rem;
+        color: var(--pure);
+        background: var(--dark);
+        clip-path: polygon(0 0%, 100% 0, 100% 98%, 0 100%);
+    }
+
+    .skills .container .right img{
+        width: 250px;
+        height: 250px;
+    }
+
+    .skills .container .left{
+        margin-right: 3rem;
+    }
+    
+    .skills .container .left h1{
+        font-weight: 600;
+        font-size: 2rem;
+        text-align: justify;
+        margin-bottom: 1rem;
+    }
+
+    .skills .container .left .p1{
+        font-weight: 100;
+        font-size: 1rem;
+        text-align: justify;
+        margin-bottom: 1rem;
+    }
+
+    .skills .container .left .p1 span{
+        font-weight: 300;
+    }
+    
+    .skills .container .left .p2{
+        font-weight: 100;
+        font-size: 1rem;
+        text-align: justify;
+        margin-bottom: 1.5rem;
+    }
+
+    .skills .container .left .p2 span{
+        font-weight: 300;
+    }
+    
+    .skills .container .left .p3{
+        font-weight: 100;
+        font-size: 1rem;
+        text-align: justify;
+        margin-bottom: 2rem;
+    }
+
+
+    /* This is the experience(1052px) section */
+
+
+    .experience{
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        color: var(--secondary);
+    }
+    
+    .experience .timeline{
+        position: relative;
+        margin: 1rem auto;
+        box-sizing: border-box;
+    }
+    
+    .experience .experience-title{
+        margin-bottom: 3rem;
+    }
+    
+    .experience .experience-title h1{
+        font-weight: 600;
+        font-size: 2rem;
+        text-align: center;
+    }
+    
+    .experience .timeline::before{
+        content: '';
+        position: absolute;
+        left: 50%;
+        width: 2px;
+        height: 100%;
+        background: var(--ternary);
+    }
+    
+    .experience .timeline ul{
+        margin: 0;
+        padding: 0;
+    }
+    
+    .experience .timeline ul li{
+        list-style: none;
+        position: relative;
+        width: 50%;
+        padding: 20px 40px;
+        box-sizing: border-box;
+    }
+    
+    .experience .timeline ul li:nth-child(odd){
+        float: left;
+        clear: both;
+    }
+    
+    .experience .timeline ul li:nth-child(even){
+        float: right;
+        clear: both;
+    }
+    
+    .experience .timeline ul li:nth-child(odd)::before{
+        content: '';
+        position: absolute;
+        top: 28px;
+        right: -6px;
+        width: 10px;
+        height: 10px;
+        background: var(--primary);
+        border-radius: 50%;
+        box-shadow: 0 0 0 5px rgba(50, 222, 132, 0.33);
+    }
+    
+    .experience .timeline ul li:nth-child(even)::before{
+        content: '';
+        position: absolute;
+        top: 28px;
+        left: -4px;
+        width: 8px;
+        height: 8px;
+        background: var(--primary);
+        border-radius: 50%;
+        box-shadow: 0 0 0 5px rgba(50, 222, 132, 0.33);
+    }
+    
+    .experience .timeline ul li .content{
+        padding-bottom: 1rem;
+    }
+    
+    .experience .timeline ul li:nth-child(odd) .content{
+        text-align: right;
+    }
+    
+    .experience .timeline ul li:nth-child(even) .content{
+        text-align: left;
+    }
+    
+    .experience .timeline ul li .content h3{
+        padding: 0;
+        margin-bottom: 1rem;
+        font-weight: 500;
+        font-size: 1.1rem;
+        color: var(--primary);
+    }
+    
+    .experience .timeline ul li .content h4{
+        padding: 0;
+        margin-bottom: 1rem;
+        font-weight: 300;
+        font-size: 1rem;
+        color: var(--secondary);
+    }
+    
+    .experience .timeline ul li .content p{
+        padding: 0;
+        font-weight: 200;
+        font-size: 0.8rem;
+        color: var(--secondary);
+    }
+    
+    .experience .timeline ul li .time{
+        position: absolute;
+        top: 14px;
+        margin: 0;
+        text-align: center;
+        min-width: 220px;
+        padding: 6px 16px;
+        background: var(--primary);
+        color: var(--pure);
+        border-radius: 25px;
+        box-shadow: 0 0 0 4px rgba(50, 222, 132, 0.33);
+    }
+    
+    .experience .timeline ul li .time h4{
+        font-size: 0.8rem;
+        font-weight: 400;
+    }
+    
+    .experience .timeline ul li:nth-child(odd) .time{
+        right: -260px;
+    }
+    
+    .experience .timeline ul li:nth-child(even) .time{
+        left: -260px;
+    }
+
+
+    /* This is the services(1052px) section */
+
+
+    .services{
+        background: var(--light);
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+    
+    .services .container h1{
+        font-weight: 600;
+        font-size: 2rem;
+        text-align: center;
+        color: var(--secondary);
+        margin-bottom: 6rem;
+    }
+    
+    .services .container .card-wrapper{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 6rem;
+    }
+    
+    .services .container .card-wrapper .card{
+        background: var(--pure);
+        padding: 2rem 2rem;
+        padding-top: 3rem;
+        color: var(--secondary);
+        position: relative;
+        border-radius: 8px;
+        text-align: center;
+        transition: all .3s ease;
+    }
+    
+    .services .container .card-wrapper .card img{
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        top: -50px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .services .container .card-wrapper .card h3{
+        font-weight: 500;
+        font-size: 1.25rem;
+        margin: 1rem;
+        color: var(--secondary);
+    }
+    
+    .services .container .card-wrapper .card p{
+        font-weight: 100;
+        font-size: 1rem;
+        color: var(--ternary);
+    }
+    
+    .services .container .card-wrapper .card:hover{
+        background: var(--secondary);
+    }
+    
+    .services .container .card-wrapper .card:hover h3{
+        color: var(--pure);
+    }
+    
+    .services .container .card-wrapper .card:hover p{
+        color: var(--light);
+    }
+
+
+    /* This is the freelancer(1052px) section */
+
+
+    .freelancer{
+        padding-top: 4rem;
+        padding-bottom: 6rem;
+        text-align: center;
+        background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(../images/freelancing.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 80% 90%, 0 100%);
+    }
+    
+    .freelancer .container h3{
+        padding-left: 2rem;
+        padding-right: 2rem;
+        font-weight: 500;
+        font-size: 2rem;
+        color: var(--pure);
+        margin-bottom: 1.5rem;
+    }
+    
+    .freelancer .container p{
+        padding-left: 3rem;
+        padding-right: 3rem;
+        font-weight: 100;
+        font-size: 1rem;
+        color: var(--light);
+        margin-bottom: 2rem;
+    }
+    
+    .freelancer .container p span{
+        font-weight: 300;
+    }
+
+    .freelancer .container button{
+        padding: 0.6rem 2rem;
+        font-size: 0.8rem;
+    }
+
+
+    /* This is the recommendations(1052px) section */
+
+
+    .recommendations{
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        text-align: center;
+    }
+    
+    .recommendations .container h1{
+        font-weight: 600;
+        font-size: 2rem;
+        color: var(--primary);
+        margin-bottom: 1.5rem;
+    }
+    
+    .recommendations .container p{
+        font-weight: 100;
+        padding-left: 4rem;
+        padding-right: 4rem;
+        font-size: 1rem;
+        color: var(--secondary);
+        margin-bottom: 3rem;
+    }
+    
+    .recommendations .container .slider .slide{
+        text-align: center;
+        display: flex;
+        min-height: 0;
+        min-width: 0;
+        align-items: center;
+        flex-direction: column;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    
+    .recommendations .container .slider .slide img{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 2rem;
+    }
+    
+    .recommendations .container .slider .slide p{
+        font-weight: 100;
+        font-size: 0.9rem;
+        color: var(--ternary);
+        margin-bottom: 1rem;
+    }
+    
+    .recommendations .container .slider .slide a{
+        cursor: pointer;
+        text-decoration: none;
+        transition: all .3s ease;
+    }
+    
+    .recommendations .container .slider .slide a span{
+        font-weight: 300;
+        font-size: 0.8rem;
+        color: var(--secondary);
+    }
+    
+    .recommendations .container .slider .slide a:hover span{
+        color: var(--primary);
+    }
+    
+    .recommendations .container .slider-dots{
+        margin-top: 1.5rem;
+    }
+    
+    .recommendations .container .slider-dots .dots{
+        list-style-type: none;
+        display: flex!important;
+        justify-content: center;
+    }
+    
+    .recommendations .container .slider-dots button{
+        font-size: 0;
+        width: 8px;
+        height: 5px;
+        margin-right: 0.5rem;
+        border: none;
+        outline: none;
+        background: var(--ternary);
+        border-radius: 50px;
+        cursor: pointer;
+    }
+    
+    .recommendations .container .slider-dots .dots li.slick-active button{
+        background: var(--primary);
+        width: 16px;
+    }
+
+
+    /* This is the contact(1052px) section */
+
+
+    .contact{
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        background: var(--light);
+    }
+    
+    .contact .container h1{
+        font-weight: 600;
+        font-size: 2rem;
+        text-align: center;
+        color: var(--secondary);
+        margin-bottom: 1.5rem;
+    }
+    
+    .contact .container .card-wrapper{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 1rem;
+        grid-row-gap: 2rem;
+    }
+    
+    .contact .container .card-wrapper .card{
+        text-align: center;
+    }
+    
+    .contact .container .card-wrapper .card img{
+        width: 80px;
+        height: 80px;
+        margin-bottom: 1rem;
+    }
+    
+    .contact .container .card-wrapper .card h3{
+        font-weight: 300;
+        font-size: 1rem;
+        color: var(--secondary);
+        margin-bottom: 1rem;
+        padding: 0 1rem;
+    }
+    
+    .contact .container .card-wrapper .card h6{
+        font-weight: 100;
+        font-size: 0.8rem;
+        color: var(--ternary);
+        padding: 0 1rem;
+    }
+    
+    .contact .container .card-wrapper .card a{
+        text-decoration: none;
+        cursor: pointer;
+    }
+    
+    .contact .container .card-wrapper .card a:hover h6{
+        color: var(--primary);
+    }
+
+
+    /* This is the footer(1052px) section */
+
+
+    footer{
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        background: var(--secondary);
+        text-align: center;
+    }
+    
+    footer a{
+        cursor: pointer;
+        text-decoration: none;
+    }
+    
+    footer a img{
+        width: 220px;
+        height: 28px;
+    }
+
+    footer .footer-wrap .footer-socials a{
+        padding-left: 0.25rem;
+        padding-right: 0.25rem;
+        cursor: pointer;
+    }
+    
+    footer .footer-wrap .copyright h6{
+        color: var(--ternary);
+        font-weight: 100;
+        font-size: 0.7rem;
+    }
+}
+
+
+/* Media Queries - 767.5px max-width */
+
+
+@media (max-width: 767.5px) {
+
+    .scrollTop{
+        position: fixed;
+        bottom: 800px;
+        right: 30px;
+        width: 32px;
+        height: 32px;
+        z-index: 1;
+        cursor: pointer;
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.5s;
+    }
+    
+    .scrollTop img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .scrollTop.active{
+        bottom: 30px;
+        visibility: visible;
+        opacity: 1;
+    }
+
+
+    /* This is the header(767.5px) section */
+
+
+    header{
+        display: none;
+    }
+
+
+    /* This is the intro(767.5px) section */
+
+
+    .intro{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 80% 95%, 0 100%);
+    }
+
+    .intro .hero{
+        padding-top: 8rem;
+    }
+
+    .intro .hero .right img{
+        width: 300px;
+        height: 300px;
+    }
+
+    .intro .hero .left h1{
+        font-weight: 600;
+        font-size: 3.5rem;
+        color: var(--primary);
+    }
+
+    .intro .hero .left h6{
+        font-weight: 300;
+        font-size: 1.2rem;
+        text-align: justify;
+        margin-bottom: 1rem;
+    }
+    
+    .intro .hero .left p{
+        font-weight: 100;
+        font-size: 0.9rem;
+        text-align: justify;
+        margin-bottom: 2rem;
+    }
+
+    .intro .hero .left p span{
+        font-weight: 300;
+    }
+
+    .intro .hero .left div .resume-btn{
+        margin-right: 1rem;
+    }
+
+    .intro .hero .left div .resume-btn button{
+        padding: 0.6rem 2rem;
+        font-size: 0.8rem;
+    }
+
+    .intro .hero .left div .contact-btn button{
+        padding: 0.6rem 2rem;
+        font-size: 0.8rem;
+    }
+
+
+    /* This is the about(767.5px) section */
+
+
+    .about{
+        padding-top: 4rem;
+        padding-bottom: 2rem;
+        color: var(--secondary);
+    }
+
+    .about-inner-wrap{
+        flex-direction: column;
+    }
+
+    .about .left{
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+
+    .about .right{  
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+    }
+
+    .about .container .left img{
+        width: 200px;
+        height: 230px;
+    }
+
+    .about .container .right h1{
+        font-weight: 600;
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 1rem;
+        margin-top: 2rem;
+    }
+    
+    .about .container .right h6{
+        font-weight: 300;
+        font-size: 1.25rem;
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+    
+    .about .container .right .p1{
+        font-weight: 100;
+        font-size: 0.9rem;
+        text-align: justify;
+        margin-bottom: 0.8rem;
+    }
+
+    .about .container .right .p1 span{
+        font-weight: 300;
+    }
+    
+    .about .container .right .p2{
+        font-weight: 100;
+        font-size: 0.9rem;
+        text-align: justify;
+        margin-bottom: 1rem;
+    }
+
+    .about .container .right .p2 span{
+        font-weight: 300;
+    }
+
+    .about .container .right .p3{
+        font-weight: 100;
+        font-size: 0.9rem;
+        text-align: justify;
+        margin-bottom: 1rem;
+    }
+
+    .about .container .right .p3 span{
+        font-weight: 300;
+    }
+    
+    .about .container .right .p4{
+        font-weight: 300;
+        font-size: 0.9rem;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    
+    .about .container .right .p4 a:hover{
+        color: var(--secondary);
+    }
+    
+    .about .container .right div a{
+        cursor: pointer;
+        margin-right: 0.2rem;
+    }
+    
+    .about .container .right .about-socials a img{
+        width: 50px;
+        height: 50px;
+        padding: 5px;
+        transition: all .3s ease;
+    }
+
+    .about .container .right .about-socials a img:hover{
+        width: 50px;
+        height: 50px;
+        padding: 0px;
+    }
+
+
+    /* This is the skills(767.5px) section */
+
+
+    .skills{
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        color: var(--pure);
+        background: var(--dark);
+        clip-path: polygon(0 0%, 100% 0, 100% 98%, 0 100%);
+    }
+
+    .skills-inner-wrap{
+        flex-direction: column;
+        flex-flow: column-reverse;
+    }
+
+    .skills .right{
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+
+    .skills .left{
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+    }
+
+    .skills .container .right img{
+        width: 250px;
+        height: 250px;
+    }
+
+    .skills .container .left{
+        margin-right: 0;
+    }
+    
+    .skills .container .left h1{
+        font-weight: 600;
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .skills .container .left .p1{
+        font-weight: 100;
+        font-size: 0.9rem;
+        text-align: justify;
+        margin-bottom: 1rem;
+    }
+
+    .skills .container .left .p1 span{
+        font-weight: 300;
+    }
+    
+    .skills .container .left .p2{
+        font-weight: 100;
+        font-size: 0.9rem;
+        text-align: justify;
+        margin-bottom: 1.5rem;
+    }
+
+    .skills .container .left .p2 span{
+        font-weight: 300;
+    }
+    
+    .skills .container .left .p3{
+        font-weight: 100;
+        font-size: 0.9rem;
+        text-align: justify;
+        margin-bottom: 2rem;
+    }
+
+    .skills .container .left .skills-area1 h6{
+        text-align: start;
+        font-weight: 500;
+        font-size: 1rem;
+    }
+
+    .skills .container .left .skills-area2 h6{
+        text-align: start;
+        font-weight: 500;
+        font-size: 1rem;
+    }
+
+    .skills .container .left .skills-area3 h6{
+        text-align: start;
+        font-weight: 500;
+        font-size: 1rem;
+    }
+
+
+    /* This is the experience(767.5px) section */
+
+
+    .experience{
+        padding-top: 3rem;
+        padding-bottom: 2rem;
+        color: var(--secondary);
+    }
+    
+    .experience .timeline{
+        position: relative;
+        margin: 1rem auto;
+        box-sizing: border-box;
+    }
+    
+    .experience .experience-title{
+        margin-bottom: 3rem;
+    }
+    
+    .experience .experience-title h1{
+        font-weight: 600;
+        font-size: 2rem;
+        text-align: center;
+    }
+    
+    .experience .timeline::before{
+        content: '';
+        position: absolute;
+        left: 50%;
+        width: 2px;
+        height: 100%;
+        background: var(--ternary);
+    }
+    
+    .experience .timeline ul{
+        margin: 0;
+        padding: 0;
+    }
+    
+    .experience .timeline ul li{
+        list-style: none;
+        position: relative;
+        width: 50%;
+        padding: 10px 40px;
+        box-sizing: border-box;
+    }
+    
+    .experience .timeline ul li:nth-child(odd){
+        float: left;
+        clear: both;
+    }
+    
+    .experience .timeline ul li:nth-child(even){
+        float: right;
+        clear: both;
+    }
+    
+    .experience .timeline ul li:nth-child(odd)::before{
+        content: '';
+        position: absolute;
+        top: 28px;
+        right: -6px;
+        width: 10px;
+        height: 10px;
+        background: var(--primary);
+        border-radius: 50%;
+        box-shadow: 0 0 0 5px rgba(50, 222, 132, 0.33);
+    }
+    
+    .experience .timeline ul li:nth-child(even)::before{
+        content: '';
+        position: absolute;
+        top: 28px;
+        left: -4px;
+        width: 8px;
+        height: 8px;
+        background: var(--primary);
+        border-radius: 50%;
+        box-shadow: 0 0 0 5px rgba(50, 222, 132, 0.33);
+    }
+    
+    .experience .timeline ul li .content{
+        padding-bottom: 0.5rem;
+    }
+    
+    .experience .timeline ul li:nth-child(odd) .content{
+        text-align: right;
+    }
+    
+    .experience .timeline ul li:nth-child(even) .content{
+        text-align: left;
+    }
+    
+    .experience .timeline ul li .content h3{
+        padding: 0;
+        margin-bottom: 1rem;
+        font-weight: 500;
+        font-size: 1rem;
+        color: var(--primary);
+    }
+    
+    .experience .timeline ul li .content h4{
+        padding: 0;
+        margin-bottom: 1rem;
+        font-weight: 300;
+        font-size: 0.9rem;
+        color: var(--secondary);
+    }
+    
+    .experience .timeline ul li .content p{
+        padding: 0;
+        font-weight: 200;
+        font-size: 0.8rem;
+        color: var(--secondary);
+    }
+    
+    .experience .timeline ul li .time{
+        position: absolute;
+        top: 14px;
+        margin: 0;
+        text-align: center;
+        min-width: 220px;
+        padding: 6px 16px;
+        background: var(--primary);
+        color: var(--pure);
+        border-radius: 25px;
+        box-shadow: 0 0 0 4px rgba(50, 222, 132, 0.33);
+    }
+    
+    .experience .timeline ul li .time h4{
+        font-size: 0.8rem;
+        font-weight: 400;
+    }
+    
+    .experience .timeline ul li:nth-child(odd) .time{
+        right: -260px;
+    }
+    
+    .experience .timeline ul li:nth-child(even) .time{
+        left: -260px;
+    }
+
+
+    /* This is the services(767.5px) section */
+
+
+    .services{
+        background: var(--light);
+        padding-top: 3rem;
+        padding-bottom: 4rem;
+    }
+    
+    .services .container h1{
+        font-weight: 600;
+        font-size: 2rem;
+        text-align: center;
+        color: var(--secondary);
+        margin-bottom: 6rem;
+    }
+    
+    .services .container .card-wrapper{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 6rem;
+    }
+    
+    .services .container .card-wrapper .card{
+        background: var(--pure);
+        padding: 2rem 2rem;
+        padding-top: 3rem;
+        color: var(--secondary);
+        position: relative;
+        border-radius: 8px;
+        text-align: center;
+        transition: all .3s ease;
+    }
+    
+    .services .container .card-wrapper .card img{
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        top: -50px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .services .container .card-wrapper .card h3{
+        font-weight: 500;
+        font-size: 1.2rem;
+        margin: 1rem;
+        color: var(--secondary);
+    }
+    
+    .services .container .card-wrapper .card p{
+        font-weight: 100;
+        font-size: 0.9rem;
+        color: var(--ternary);
+    }
+    
+    .services .container .card-wrapper .card:hover{
+        background: var(--secondary);
+    }
+    
+    .services .container .card-wrapper .card:hover h3{
+        color: var(--pure);
+    }
+    
+    .services .container .card-wrapper .card:hover p{
+        color: var(--light);
+    }
+
+
+    /* This is the freelancer(767.5px) section */
+
+
+    .freelancer{
+        padding-top: 3rem;
+        padding-bottom: 5rem;
+        text-align: center;
+        background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(../images/freelancing.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 80% 90%, 0 100%);
+    }
+    
+    .freelancer .container h3{
+        padding-left: 2rem;
+        padding-right: 2rem;
+        font-weight: 500;
+        font-size: 1.8rem;
+        color: var(--pure);
+        margin-bottom: 1.5rem;
+    }
+    
+    .freelancer .container p{
+        padding-left: 3rem;
+        padding-right: 3rem;
+        font-weight: 100;
+        font-size: 0.9rem;
+        color: var(--light);
+        margin-bottom: 2rem;
+    }
+    
+    .freelancer .container p span{
+        font-weight: 300;
+    }
+
+    .freelancer .container button{
+        padding: 0.6rem 2rem;
+        font-size: 0.8rem;
+    }
+
+
+    /* This is the recommendations(767.5px) section */
+
+
+    .recommendations{
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        text-align: center;
+    }
+    
+    .recommendations .container h1{
+        font-weight: 600;
+        font-size: 2rem;
+        color: var(--primary);
+        margin-bottom: 1rem;
+    }
+    
+    .recommendations .container p{
+        font-weight: 100;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        font-size: 0.9rem;
+        color: var(--secondary);
+        margin-bottom: 3rem;
+    }
+    
+    .recommendations .container .slider .slide{
+        text-align: center;
+        display: flex;
+        min-height: 0;
+        min-width: 0;
+        align-items: center;
+        flex-direction: column;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    
+    .recommendations .container .slider .slide img{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 2rem;
+    }
+    
+    .recommendations .container .slider .slide p{
+        font-weight: 100;
+        font-size: 0.8rem;
+        color: var(--ternary);
+        margin-bottom: 1rem;
+    }
+    
+    .recommendations .container .slider .slide a{
+        cursor: pointer;
+        text-decoration: none;
+        transition: all .3s ease;
+    }
+    
+    .recommendations .container .slider .slide a span{
+        font-weight: 300;
+        font-size: 0.8rem;
+        color: var(--secondary);
+    }
+    
+    .recommendations .container .slider .slide a:hover span{
+        color: var(--primary);
+    }
+    
+    .recommendations .container .slider-dots{
+        margin-top: 1.5rem;
+    }
+    
+    .recommendations .container .slider-dots .dots{
+        list-style-type: none;
+        display: flex!important;
+        justify-content: center;
+    }
+    
+    .recommendations .container .slider-dots button{
+        font-size: 0;
+        width: 8px;
+        height: 5px;
+        margin-right: 0.5rem;
+        border: none;
+        outline: none;
+        background: var(--ternary);
+        border-radius: 50px;
+        cursor: pointer;
+    }
+    
+    .recommendations .container .slider-dots .dots li.slick-active button{
+        background: var(--primary);
+        width: 16px;
+    }
+
+
+    /* This is the contact(767.5px) section */
+
+
+    .contact{
+        padding-top: 2rem;
+        padding-bottom: 3rem;
+        background: var(--light);
+    }
+    
+    .contact .container h1{
+        font-weight: 600;
+        font-size: 2rem;
+        text-align: center;
+        color: var(--secondary);
+        margin-bottom: 1.25rem;
+    }
+    
+    .contact .container .card-wrapper{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 1rem;
+        grid-row-gap: 2rem;
+    }
+    
+    .contact .container .card-wrapper .card{
+        text-align: center;
+    }
+    
+    .contact .container .card-wrapper .card img{
+        width: 60px;
+        height: 60px;
+        margin-bottom: 1rem;
+    }
+    
+    .contact .container .card-wrapper .card h3{
+        font-weight: 300;
+        font-size: 0.9rem;
+        color: var(--secondary);
+        margin-bottom: 1rem;
+        padding: 0 0;
+    }
+    
+    .contact .container .card-wrapper .card h6{
+        font-weight: 100;
+        font-size: 0.75rem;
+        color: var(--ternary);
+        padding: 0 0;
+    }
+    
+    .contact .container .card-wrapper .card a{
+        text-decoration: none;
+        cursor: pointer;
+    }
+    
+    .contact .container .card-wrapper .card a:hover h6{
+        color: var(--primary);
+    }
+
+
+    /* This is the footer(767.5px) section */
+
+
+    footer{
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        background: var(--secondary);
+        text-align: center;
+    }
+
+    .footer-inner-wrap{
+        flex-direction: column;
+    }
+    
+    footer a{
+        cursor: pointer;
+        text-decoration: none;
+        margin-bottom: 1.25rem;
+    }
+    
+    footer a img{
+        width: 220px;
+        height: 28px;
+    }
+
+    footer .footer-wrap .footer-socials{
+        margin-bottom: 1.25rem;
+    }
+
+    footer .footer-wrap .footer-socials a{
+        padding-left: 0.25rem;
+        padding-right: 0.25rem;
+        cursor: pointer;
+    }
+    
+    footer .footer-wrap .copyright h6{
+        color: var(--ternary);
+        font-weight: 100;
+        font-size: 0.7rem;
+    }
+}
+
+
+/* Media Queries - 575.5px max-width */
+
+
+@media (max-width: 575.5px){
+
+    .scrollTop{
+        position: fixed;
+        bottom: 800px;
+        right: 30px;
+        width: 32px;
+        height: 32px;
+        z-index: 1;
+        cursor: pointer;
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.5s;
+    }
+    
+    .scrollTop img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .scrollTop.active{
+        bottom: 30px;
+        visibility: visible;
+        opacity: 1;
+    }
+
+
+    /* This is the header(575.5px) section */
+
+
+    header{
+        display: none;
+    }
+
+
+    /* This is the intro(575.5px) section */
+
+
+    .intro{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 80% 95%, 0 100%);
+    }
+
+    .intro .hero{
+        padding-top: 8rem;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .intro .hero .left .intro-btns{
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .intro .hero .left h1{
+        font-weight: 600;
+        font-size: 3.5rem;
+        text-align: center;
+        color: var(--primary);
+    }
+
+    .intro .hero .left h6{
+        font-weight: 300;
+        font-size: 1.2rem;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    
+    .intro .hero .left p{
+        font-weight: 200;
+        font-size: 0.9rem;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .intro .hero .left p span{
+        font-weight: 300;
+    }
+
+    .intro .hero .left div .resume-btn{
+        margin-right: 1rem;
+    }
+
+    .intro .hero .left div .resume-btn button{
+        padding: 0.6rem 2rem;
+        font-size: 0.8rem;
+    }
+
+    .intro .hero .left div .contact-btn button{
+        padding: 0.6rem 2rem;
+        font-size: 0.8rem;
+    }
+
+    .intro .hero .right{
+        margin-top: 3rem;
+    }
+
+
+    /* This is the about(575.5px) section */
+
+
+    .about{
+        padding-top: 4rem;
+        padding-bottom: 2rem;
+        color: var(--secondary);
+    }
+
+    .about-inner-wrap{
+        flex-direction: column;
+    }
+
+    .about .left{
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+
+    .about .right{  
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+    }
+
+    .about .container .left img{
+        width: 200px;
+        height: 230px;
+    }
+
+    .about .container .right h1{
+        font-weight: 600;
+        font-size: 1.5rem;
+        text-align: center;
+        margin-bottom: 1rem;
+        margin-top: 2rem;
+    }
+    
+    .about .container .right h6{
+        font-weight: 300;
+        font-size: 1.1rem;
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+    
+    .about .container .right .p1{
+        font-weight: 200;
+        font-size: 0.8rem;
+        text-align: justify;
+        margin-bottom: 0.8rem;
+    }
+
+    .about .container .right .p1 span{
+        font-weight: 300;
+    }
+    
+    .about .container .right .p2{
+        font-weight: 200;
+        font-size: 0.8rem;
+        text-align: justify;
+        margin-bottom: 1rem;
+    }
+
+    .about .container .right .p2 span{
+        font-weight: 300;
+    }
+
+    .about .container .right .p3{
+        font-weight: 200;
+        font-size: 0.8rem;
+        text-align: justify;
+        margin-bottom: 1rem;
+    }
+
+    .about .container .right .p3 span{
+        font-weight: 300;
+    }
+    
+    .about .container .right .p4{
+        font-weight: 300;
+        font-size: 0.8rem;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    
+    .about .container .right .p4 a:hover{
+        color: var(--secondary);
+    }
+    
+    .about .container .right div a{
+        cursor: pointer;
+        margin-right: 0;
+    }
+    
+    .about .container .right .about-socials a img{
+        width: 37.5px;
+        height: 37.5px;
+        padding: 3px;
+        transition: all .3s ease;
+    }
+
+    .about .container .right .about-socials a img:hover{
+        width: 37.5px;
+        height: 37.5px;
+        padding: 0px;
+    }
+
+
+    /* This is the skills(575.5px) section */
+
+
+    .skills{
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        color: var(--pure);
+        background: var(--dark);
+        clip-path: polygon(0 0%, 100% 0, 100% 98%, 0 100%);
+    }
+
+    .skills-inner-wrap{
+        flex-direction: column;
+        flex-flow: column-reverse;
+    }
+
+    .skills .right{
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+
+    .skills .left{
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+    }
+
+    .skills .container .right img{
+        width: 250px;
+        height: 250px;
+    }
+
+    .skills .container .left{
+        margin-right: 0;
+    }
+    
+    .skills .container .left h1{
+        font-weight: 600;
+        font-size: 1.5rem;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .skills .container .left .p1{
+        font-weight: 200;
+        font-size: 0.8rem;
+        text-align: justify;
+        margin-bottom: 1rem;
+    }
+
+    .skills .container .left .p1 span{
+        font-weight: 300;
+    }
+    
+    .skills .container .left .p2{
+        font-weight: 200;
+        font-size: 0.8rem;
+        text-align: justify;
+        margin-bottom: 1.5rem;
+    }
+
+    .skills .container .left .p2 span{
+        font-weight: 300;
+    }
+    
+    .skills .container .left .p3{
+        font-weight: 200;
+        font-size: 0.8rem;
+        text-align: justify;
+        margin-bottom: 2rem;
+    }
+
+    .skills .container .left .skills-area1 h6{
+        text-align: start;
+        font-weight: 500;
+        font-size: 0.9rem;
+    }
+
+    .skills .container .left .skills-area1 ul li p{
+        font-size: 0.65rem;
+    }
+
+    .skills .container .left .skills-area2 h6{
+        text-align: start;
+        font-weight: 500;
+        font-size: 0.9rem;
+    }
+
+    .skills .container .left .skills-area2 ul li p{
+        font-size: 0.65rem;
+    }
+
+    .skills .container .left .skills-area3 h6{
+        text-align: start;
+        font-weight: 500;
+        font-size: 0.9rem;
+    }
+
+    .skills .container .left .skills-area3 ul li p{
+        font-size: 0.65rem;
+    }
+
+
+    /* This is the experience(575.5px) section */
+
+
+    .experience{
+        padding-top: 3rem;
+        padding-bottom: 4rem;
+        color: var(--secondary);
+    }
+    
+    .experience .timeline{
+        position: relative;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+    
+    .experience .experience-title{
+        margin-bottom: 2.5rem;
+    }
+    
+    .experience .experience-title h1{
+        font-weight: 600;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    
+    .experience .experience-title h1 span{
+        color: var(--primary);
+    }
+    
+    .experience .timeline::before{
+        content: '';
+        position: absolute;
+        left: 2rem;
+        width: 2px;
+        height: 100%;
+        background: var(--ternary);
+    }
+    
+    .experience .timeline ul{
+        margin: 0;
+        padding: 0;
+    }
+    
+    .experience .timeline ul li{
+        list-style: none;
+        position: relative;
+        width: 100%;
+        padding: 10px 40px;
+        box-sizing: border-box;
+    }
+    
+    .experience .timeline ul li:nth-child(odd){
+        float: right;
+        clear: both;
+    }
+    
+    .experience .timeline ul li:nth-child(even){
+        float: right;
+        clear: both;
+    }
+    
+    .experience .timeline ul li:nth-child(odd)::before{
+        content: '';
+        position: absolute;
+        top: 28px;
+        left: 12px;
+        width: 10px;
+        height: 10px;
+        background: var(--primary);
+        border-radius: 50%;
+        box-shadow: 0 0 0 5px rgba(50, 222, 132, 0.33);
+    }
+    
+    .experience .timeline ul li:nth-child(even)::before{
+        content: '';
+        position: absolute;
+        top: 28px;
+        left: 12px;
+        width: 10px;
+        height: 10px;
+        background: var(--primary);
+        border-radius: 50%;
+        box-shadow: 0 0 0 5px rgba(50, 222, 132, 0.33);
+    }
+    
+    .experience .timeline ul li .content{
+        padding-bottom: 1rem;
+    }
+    
+    .experience .timeline ul li:nth-child(odd) .content{
+        text-align: left;
+    }
+    
+    .experience .timeline ul li:nth-child(even) .content{
+        text-align: left;
+    }
+    
+    .experience .timeline ul li .content h3{
+        padding-top: 4rem;
+        margin-bottom: 1rem;
+        font-weight: 500;
+        font-size: 1rem;
+        color: var(--primary);
+    }
+    
+    .experience .timeline ul li .content h4{
+        padding: 0;
+        margin-bottom: 1rem;
+        font-weight: 400;
+        font-size: 0.9rem;
+        color: var(--secondary);
+    }
+    
+    .experience .timeline ul li .content p{
+        padding: 0;
+        font-weight: 200;
+        font-size: 0.8rem;
+        color: var(--secondary);
+        margin-bottom: 1rem;
+    }
+    
+    .experience .timeline ul li .time{
+        position: absolute;
+        top: 14px;
+        margin: 0;
+        text-align: center;
+        min-width: 200px;
+        max-width: 200px;
+        padding: 8px 20px;
+        background: var(--primary);
+        color: var(--pure);
+        border-radius: 25px;
+        box-shadow: 0 0 0 4px rgba(50, 222, 132, 0.33);
+    }
+    
+    .experience .timeline ul li .time h4{
+        font-size: 0.8rem;
+        font-weight: 300;
+    }
+    
+    .experience .timeline ul li:nth-child(odd) .time{
+        left: 40px;
+    }
+    
+    .experience .timeline ul li:nth-child(even) .time{
+        left: 40px;
+    }
+
+
+    /* This is the services(575.5px) section */
+
+
+    .services{
+        background: var(--light);
+        padding-top: 2.5rem;
+        padding-bottom: 3rem;
+    }
+    
+    .services .container h1{
+        font-weight: 600;
+        font-size: 1.5rem;
+        text-align: center;
+        color: var(--secondary);
+        margin-bottom: 5rem;
+    }
+    
+    .services .container .card-wrapper{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 6rem;
+    }
+    
+    .services .container .card-wrapper .card{
+        background: var(--pure);
+        padding: 2rem 2rem;
+        padding-top: 2.5rem;
+        color: var(--secondary);
+        position: relative;
+        border-radius: 8px;
+        text-align: center;
+        transition: all .3s ease;
+    }
+    
+    .services .container .card-wrapper .card img{
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        top: -50px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .services .container .card-wrapper .card h3{
+        font-weight: 500;
+        font-size: 1rem;
+        margin: 1rem;
+        color: var(--secondary);
+    }
+    
+    .services .container .card-wrapper .card p{
+        font-weight: 200;
+        font-size: 0.8rem;
+        color: var(--ternary);
+    }
+    
+    .services .container .card-wrapper .card:hover{
+        background: var(--secondary);
+    }
+    
+    .services .container .card-wrapper .card:hover h3{
+        color: var(--pure);
+    }
+    
+    .services .container .card-wrapper .card:hover p{
+        color: var(--light);
+    }
+
+
+    /* This is the freelancer(575.5px) section */
+
+
+    .freelancer{
+        padding-top: 3rem;
+        padding-bottom: 4rem;
+        text-align: center;
+        background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(../images/freelancing.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 80% 94%, 0 100%);
+    }
+    
+    .freelancer .container h3{
+        padding-left: 0;
+        padding-right: 0;
+        font-weight: 500;
+        font-size: 1.4rem;
+        color: var(--pure);
+        margin-bottom: 1.5rem;
+    }
+    
+    .freelancer .container p{
+        padding-left: 0;
+        padding-right: 0;
+        font-weight: 200;
+        font-size: 0.8rem;
+        color: var(--light);
+        margin-bottom: 2rem;
+    }
+    
+    .freelancer .container p span{
+        font-weight: 300;
+    }
+
+    .freelancer .container button{
+        padding: 0.6rem 2rem;
+        font-size: 0.8rem;
+    }
+
+
+    /* This is the recommendations(575.5px) section */
+
+
+    .recommendations{
+        padding-top: 2.5rem;
+        padding-bottom: 3rem;
+        text-align: center;
+    }
+    
+    .recommendations .container h1{
+        font-weight: 600;
+        font-size: 1.5rem;
+        color: var(--primary);
+        margin-bottom: 1rem;
+    }
+    
+    .recommendations .container p{
+        font-weight: 200;
+        padding-left: 0;
+        padding-right: 0;
+        font-size: 0.8rem;
+        color: var(--secondary);
+        margin-bottom: 2rem;
+    }
+    
+    .recommendations .container .slider .slide{
+        text-align: center;
+        display: flex;
+        min-height: 0;
+        min-width: 0;
+        align-items: center;
+        flex-direction: column;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    .recommendations .container .slider .slide img{
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 1.5rem;
+    }
+    
+    .recommendations .container .slider .slide p{
+        font-weight: 200;
+        font-size: 0.7rem;
+        color: var(--ternary);
+        margin-bottom: 1rem;
+    }
+    
+    .recommendations .container .slider .slide a{
+        cursor: pointer;
+        text-decoration: none;
+        transition: all .3s ease;
+    }
+    
+    .recommendations .container .slider .slide a span{
+        font-weight: 300;
+        font-size: 0.75rem;
+        color: var(--secondary);
+    }
+    
+    .recommendations .container .slider .slide a:hover span{
+        color: var(--primary);
+    }
+    
+    .recommendations .container .slider-dots{
+        margin-top: 1.5rem;
+    }
+    
+    .recommendations .container .slider-dots .dots{
+        list-style-type: none;
+        display: flex!important;
+        justify-content: center;
+    }
+    
+    .recommendations .container .slider-dots button{
+        font-size: 0;
+        width: 8px;
+        height: 5px;
+        margin-right: 0.5rem;
+        border: none;
+        outline: none;
+        background: var(--ternary);
+        border-radius: 50px;
+        cursor: pointer;
+    }
+    
+    .recommendations .container .slider-dots .dots li.slick-active button{
+        background: var(--primary);
+        width: 16px;
+    }
+
+
+    /* This is the contact(575.5px) section */
+
+
+    .contact{
+        padding-top: 2rem;
+        padding-bottom: 3rem;
+        background: var(--light);
+    }
+    
+    .contact .container h1{
+        font-weight: 600;
+        font-size: 1.5rem;
+        text-align: center;
+        color: var(--secondary);
+        margin-bottom: 1.25rem;
+    }
+    
+    .contact .container .card-wrapper{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-column-gap: 0;
+        grid-row-gap: 1rem;
+    }
+    
+    .contact .container .card-wrapper .card{
+        text-align: center;
+    }
+    
+    .contact .container .card-wrapper .card img{
+        width: 60px;
+        height: 60px;
+        margin-bottom: 1rem;
+    }
+    
+    .contact .container .card-wrapper .card h3{
+        font-weight: 300;
+        font-size: 0.9rem;
+        color: var(--secondary);
+        margin-bottom: 1rem;
+        padding: 0 0;
+    }
+    
+    .contact .container .card-wrapper .card h6{
+        font-weight: 200;
+        font-size: 0.75rem;
+        color: var(--ternary);
+        padding: 0 0;
+    }
+    
+    .contact .container .card-wrapper .card a{
+        text-decoration: none;
+        cursor: pointer;
+    }
+    
+    .contact .container .card-wrapper .card a:hover h6{
+        color: var(--primary);
+    }
+}
+
+
+/* Media Query - 1052.5px min-width */
+
+
+@media (min-width: 1052.5px) {
+    .mobile-nav{
+        display: none;
+    }
+}
