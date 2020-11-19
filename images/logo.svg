@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="621" height="80.001" viewBox="0 0 621 80.001">
-  <g id="logo" transform="translate(-130 -500)">
-    <g id="logo-2" data-name="logo" transform="translate(-91 147)">
-      <path id="Union_2" data-name="Union 2" d="M508.43,236.857A40.022,40.022,0,1,1,564,200q0,.134,0,.269V240H549v-8.77a40.057,40.057,0,0,1-40.57,5.627ZM499,200a25,25,0,1,0,25-25A25.028,25.028,0,0,0,499,200Z" transform="translate(-263 193)" fill="#fff"/>
-      <path id="Subtraction_5" data-name="Subtraction 5" d="M499,271H484V231a39.967,39.967,0,0,1,40-40v15a25.029,25.029,0,0,0-25,25Z" transform="translate(-173 162)" fill="#32de84"/>
-    </g>
-    <text id="apoorva_ranjan" data-name="apoorva ranjan" transform="translate(307 560)" fill="#fff" font-size="56" font-family="Poppins-SemiBold, Poppins" font-weight="600"><tspan x="0" y="0">apoorva </tspan><tspan y="0" fill="#32de84">ranjan</tspan></text>
-  </g>
-</svg>
